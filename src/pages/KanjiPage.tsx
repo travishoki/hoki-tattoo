@@ -3,7 +3,10 @@ import { Page } from '../components/Page/Page';
 
 import ImgKanji from '~images/hoki-kanji-original-with-border.jpg';
 import ImgCranes from '~images/1001-cranes.jpg';
+import ImgCranesSmall from '~images/1001-cranes-small.jpg';
 import ImgCranesFrame from '~images/1001-cranes-frame.jpg';
+import ImgCranesFrameSmall from '~images/1001-cranes-frame-small.jpg';
+import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 
 export const KanjiPage = () => {
 	return (
@@ -11,7 +14,12 @@ export const KanjiPage = () => {
 			<p>Kanji</p>
 			<img alt="Tattoo" height="400" src={ImgKanji} width="309" />
 
-			<img alt="Tattoo" height="2048" src={ImgCranes} width="1638" />
+			<ImageMaximizable
+				alt="Cranes"
+				src={ImgCranesSmall}
+				srcLarge={ImgCranes}
+				srcLargeDimensions={[1638, 2048]}
+			/>
 			<p>
 				This is the 1001 Cranes that my family made for my wedding. They did an
 				awesome job! Each crane was hand folded and shaped into the Japanese
@@ -20,7 +28,13 @@ export const KanjiPage = () => {
 				my house and family. Thanks family for making this for Lindsey and I.
 			</p>
 
-			<img alt="Tattoo" height="960" src={ImgCranesFrame} width="960" />
+			<ImageMaximizable
+				alt="Cranes Frame"
+				src={ImgCranesFrameSmall}
+				srcLarge={ImgCranesFrame}
+				srcLargeDimensions={[960, 960]}
+			/>
 		</Page>
 	);
 };
+//
