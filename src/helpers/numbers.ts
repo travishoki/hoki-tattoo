@@ -1,19 +1,19 @@
 export const getWidthFromHeight = (
-  height: number,
-  origWidth: number,
-  origHeight: number
+	height: number,
+	origWidth: number,
+	origHeight: number,
 ): number => {
-  const ratio = origWidth / origHeight;
+	const ratio = origWidth / origHeight;
 
-  return height * ratio;
+	return height * ratio;
 };
 
 export const getHeightFromWidth = (
-  width: number,
-  origWidth: number,
-  origHeight: number
+	width: number,
+	origWidth: number,
+	origHeight: number,
 ): number => {
-  const ratio = origHeight / origWidth;
+	const ratio = origHeight / origWidth;
 
-  return width * ratio;
+	return width * ratio;
 };

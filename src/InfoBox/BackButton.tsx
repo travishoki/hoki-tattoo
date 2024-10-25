@@ -1,14 +1,15 @@
-import "./BackButton.css";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './BackButton.css';
+import { Link } from 'react-router-dom';
 
-export const BackButton = ({ link = "/" }: BackButtonProps) => {
-  return (
-    <Link className="back-button" title="Back" to={link}>
-      Back
-    </Link>
-  );
+export const BackButton = ({ link = '/' }: BackButtonProps) => {
+	return (
+		<Link className="back-button" title="Back" to={link}>
+			Back
+		</Link>
+	);
 };
 
 type BackButtonProps = {
-  link?: string;
+	link?: string;
 };
