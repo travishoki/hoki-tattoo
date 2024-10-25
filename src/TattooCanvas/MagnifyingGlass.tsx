@@ -16,7 +16,7 @@ export const MagnifyingGlass = () => {
 					srcLargeDimensions={[1179, 2556]}
 				/>
 			)}
-			<i className="fa fa-plus magnifying-glass" onClick={onClick} />;
+			<i className="fa fa-search magnifying-glass" onClick={onClick} />;
 		</>
 	);
 };
