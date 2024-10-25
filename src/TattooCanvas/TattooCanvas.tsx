@@ -1,6 +1,6 @@
 import React from 'react';
-import ImgTattoo from '../images/tattoo.jpg';
-import { getWidthFromHeight } from '../helpers/numbers';
+import { getWidthFromHeight } from '~helpers/numbers';
+import ImgTattoo from '~images/tattoo.jpg';
 import { SPOTS } from '../const';
 import { Spot } from './Spot';
 import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from './const';
