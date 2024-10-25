@@ -36,8 +36,8 @@ export const SPOTS: SpotType[] = [
 		y: 0.5,
 	},
 	{
-		link: '/style',
-		title: 'Style',
+		link: '/art',
+		title: 'art',
 		x: 0.81,
 		y: 0.74,
 	},

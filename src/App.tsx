@@ -15,7 +15,9 @@ import { DragonPage } from './pages/DragonPage';
 import { JourneyPage } from './pages/JourneyPage';
 import { ToriiPage } from './pages/ToriiPage';
 import { NoMatchPage } from './pages/NoMatchPage';
-import { StylePage } from './pages/StylePage';
+import { ArtPage } from './pages/ArtPage';
+import { ArtNeoTraditionalPage } from './pages/ArtNeoTraditionalPage';
+import { ArtMediumPage } from './pages/ArtMediumPage';
 
 const HEIGHT = 650;
 
@@ -45,7 +47,12 @@ function App() {
 						/>
 						<Route element={<DragonPage />} path="/dragon" />
 						<Route element={<JourneyPage />} path="/journey" />
-						<Route element={<StylePage />} path="/style" />
+						<Route
+							element={<ArtNeoTraditionalPage />}
+							path="/art/neo-traditional"
+						/>
+						<Route element={<ArtMediumPage />} path="/art/art-medium" />
+						<Route element={<ArtPage />} path="/art" />
 						<Route element={<ToriiPage />} path="/torii" />
 						<Route element={<NoMatchPage />} path="*" />
 					</Routes>{' '}
