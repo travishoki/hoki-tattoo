@@ -1,21 +1,24 @@
 import React from "react";
-import { SpotType } from "../const";
 import "./InfoBox.css";
+import { Content } from "./Content";
+import { PickASpot } from "./PickASpot";
 
-export const InfoBox = ({ height, spot }: InfoBoxProps) => {
-  const { description, title } = spot;
-
+export const InfoBox = ({ activeIndex, height, onClear }: InfoBoxProps) => {
   return (
     <div className="info-box" style={{ height }}>
       <div className="info-box-content">
-        <h1>{title}</h1>
-        <p>{description}</p>
-      </div>{" "}
+        {activeIndex === null ? (
+          <PickASpot />
+        ) : (
+          <Content activeIndex={activeIndex} onClear={onClear} />
+        )}
+      </div>
     </div>
   );
 };
 
 type InfoBoxProps = {
+  activeIndex: number | null;
   height: number;
-  spot: SpotType;
+  onClear: () => void;
 };

@@ -7,11 +7,13 @@ import "./App.css";
 const HEIGHT = 650;
 
 function App() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const onClick = (index: number) => {
     setActiveIndex(index);
   };
+
+  const onClear = () => setActiveIndex(null);
 
   return (
     <div className="app">
@@ -20,7 +22,7 @@ function App() {
         height={HEIGHT}
         onClick={onClick}
       />
-      <InfoBox height={HEIGHT} spot={SPOTS[activeIndex]} />
+      <InfoBox activeIndex={activeIndex} onClear={onClear} height={HEIGHT} />
     </div>
   );
 }

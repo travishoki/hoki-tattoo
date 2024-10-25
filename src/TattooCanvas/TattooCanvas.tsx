@@ -32,7 +32,7 @@ export const TattooCanvas = ({
 };
 
 type TattooCanvasProps = {
-  activeIndex: number;
+  activeIndex: number | null;
   height: number;
   onClick: (index: number) => void;
 };
