@@ -4,7 +4,7 @@ import { Title } from "../components/Title";
 
 export const DragonOriginPage = () => {
   return (
-    <Page>
+    <Page backLink="/dragon">
       <Title>Dragon Origin</Title>
     </Page>
   );
