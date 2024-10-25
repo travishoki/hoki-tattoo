@@ -16,6 +16,7 @@ export const KanjiPage = () => {
 
 			<ImageMaximizable
 				alt="Cranes"
+				dimensions={[300, 375]}
 				src={ImgCranesSmall}
 				srcLarge={ImgCranes}
 				srcLargeDimensions={[1638, 2048]}
@@ -30,6 +31,7 @@ export const KanjiPage = () => {
 
 			<ImageMaximizable
 				alt="Cranes Frame"
+				dimensions={[300, 300]}
 				src={ImgCranesFrameSmall}
 				srcLarge={ImgCranesFrame}
 				srcLargeDimensions={[960, 960]}

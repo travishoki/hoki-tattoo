@@ -11,12 +11,12 @@ export const MagnifyingGlass = () => {
 		<>
 			{selectedImg && (
 				<ImageModal
+					dimensions={[1179, 2556]}
 					onClose={onClick}
 					src={ImgTattoo}
-					srcLargeDimensions={[1179, 2556]}
 				/>
 			)}
-			<i className="fa fa-search magnifying-glass" onClick={onClick} />
+			<i className="fa fa-search-plus magnifying-glass" onClick={onClick} />
 		</>
 	);
 };
