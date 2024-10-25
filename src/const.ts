@@ -18,16 +18,16 @@ export const SPOTS: SpotType[] = [
     title: "Koi",
   },
   {
-    link: "/torii",
-    x: 265,
-    y: 65,
-    title: "Torii",
-  },
-  {
     link: "/sun",
     x: 65,
     y: 126,
     title: "Japenese Sun",
+  },
+  {
+    link: "/torii",
+    x: 265,
+    y: 65,
+    title: "Torii",
   },
 ];
 
