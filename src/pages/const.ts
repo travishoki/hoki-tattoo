@@ -4,8 +4,8 @@ export const DRAGON_LINKS: linkType[] = [
     title: "Color",
   },
   {
-    link: "/dragon/origin",
-    title: "Origin",
+    link: "/dragon/japanese-vs-chinese",
+    title: "Japanese vs Chinese",
   },
 ];
 

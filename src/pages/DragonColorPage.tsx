@@ -50,10 +50,7 @@ export const DragonColorPage = () => {
         </li>
       </ul>
 
-      <ExternalLink
-        link="https://www.dragonsinn.net/chinese-dragons/"
-        title="Reference Link"
-      />
+      <ExternalLink link="https://www.dragonsinn.net/chinese-dragons/" />
     </Page>
   );
 };

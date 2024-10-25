@@ -1,8 +1,11 @@
 import React from "react";
 
-export const ExternalLink = ({ title, link }: ExternalLinkTypes) => {
+export const ExternalLink = ({
+  title = "Reference Link",
+  link,
+}: ExternalLinkTypes) => {
   return (
-    <a href={link} target="_blank">
+    <a href={link} rel="noreferrer" target="_blank">
       {title}
     </a>
   );
@@ -10,5 +13,5 @@ export const ExternalLink = ({ title, link }: ExternalLinkTypes) => {
 
 type ExternalLinkTypes = {
   link: string;
-  title: string;
+  title?: string;
 };

@@ -10,7 +10,7 @@ import { ToriiPage } from "../pages/ToriiPage";
 import { SunPage } from "../pages/SunPage";
 import { NoMatchPage } from "../pages/NoMatchPage";
 import { DragonColorPage } from "../pages/DragonColorPage";
-import { DragonOriginPage } from "../pages/DragonOriginPage";
+import { DragonJapaneseVsChinesePage } from "../pages/DragonJapaneseVsChinesePage";
 
 export const InfoBox = ({ height }: InfoBoxProps) => {
   return (
@@ -22,7 +22,10 @@ export const InfoBox = ({ height }: InfoBoxProps) => {
           <Route element={<KanjiPage />} path="/kanji" />
           <Route element={<SunPage />} path="/sun" />
           <Route element={<DragonColorPage />} path="/dragon/color" />
-          <Route element={<DragonOriginPage />} path="/dragon/origin" />
+          <Route
+            element={<DragonJapaneseVsChinesePage />}
+            path="/dragon/japanese-vs-chinese"
+          />
           <Route element={<DragonPage />} path="/dragon" />
           <Route element={<ToriiPage />} path="/torii" />
           <Route path="*" element={<NoMatchPage />} />
