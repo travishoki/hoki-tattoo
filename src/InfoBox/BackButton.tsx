@@ -1,15 +1,14 @@
 import React from "react";
 import "./BackButton.css";
 
-export const BackButton = ({ onClick, text }: InfoBoxProps) => {
+export const BackButton = ({ onClick }: InfoBoxProps) => {
   return (
     <button className="back-button" onClick={onClick}>
-      {text}
+      Back
     </button>
   );
 };
 
 type InfoBoxProps = {
   onClick: () => void;
-  text: string;
 };

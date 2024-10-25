@@ -9,7 +9,7 @@ export const Content = ({ activeIndex, onClear }: InfoBoxProps) => {
 
   return (
     <div className="info-box-content">
-      <BackButton onClick={onClear} text="Back" />
+      <BackButton onClick={onClear} />
       <h1>{title}</h1>
       <p>{description}</p>
     </div>

@@ -1,10 +1,11 @@
 .info-box {
   border: solid 10px #222;
+  position: relative;
   width: 600px;
 }
 
 .info-box-content {
-  padding: 20px;
+  padding: 10px;
 }
 
 .info-box h1 {
