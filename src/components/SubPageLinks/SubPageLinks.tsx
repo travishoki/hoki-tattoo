@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinkType } from '../../pages/const';
+import { LinkType } from '../../pages/DragonPage.const';
 import { SubPageLink } from './SubPageLink';
 
 export const SubPageLinks = ({ links }: SubPageLinksProps) => {

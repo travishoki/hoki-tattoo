@@ -1,14 +1,14 @@
 .app {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  height: 100%;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	height: 100%;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
 }
 
 p {
-  margin-top: 0;
+	margin-top: 0;
 }

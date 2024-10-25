@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LinkType } from '../../pages/const';
+import { LinkType } from '../../pages/DragonPage.const';
 import './SubPageLink.css';
 
 export const SubPageLink = ({ link, title }: SubPageLinkProps) => {

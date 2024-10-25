@@ -8,6 +8,7 @@ import { DragonJapaneseVsChinesePage } from '../pages/DragonJapaneseVsChinesePag
 import { DragonPage } from '../pages/DragonPage';
 import { DragonPhysiologyPage } from '../pages/DragonPhysiology';
 import { HomePage } from '../pages/HomePage';
+import { JourneyPage } from '../pages/JourneyPage';
 import { KanjiPage } from '../pages/KanjiPage';
 import { KoiPage } from '../pages/KoiPage';
 import { NoMatchPage } from '../pages/NoMatchPage';
@@ -33,6 +34,7 @@ export const InfoBox = ({ height }: InfoBoxProps) => {
 				/>
 				<Route element={<DragonPhysiologyPage />} path="/dragon/physiology" />
 				<Route element={<DragonPage />} path="/dragon" />
+				<Route element={<JourneyPage />} path="/journey" />
 				<Route element={<ToriiPage />} path="/torii" />
 				<Route element={<NoMatchPage />} path="*" />
 			</Routes>
