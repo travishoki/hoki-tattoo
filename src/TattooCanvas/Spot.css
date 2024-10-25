@@ -1,0 +1,13 @@
+.spot {
+  background-color: blue;
+  border: solid 2px black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 15px;
+  position: absolute;
+  width: 15px;
+}
+
+.spot.active {
+  background-color: red;
+}

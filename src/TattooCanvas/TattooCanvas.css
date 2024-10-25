@@ -1,0 +1,10 @@
+.tattoo-canvas {
+  border: solid 10px #222;
+  position: relative;
+}
+
+.tattoo-canvas img {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
