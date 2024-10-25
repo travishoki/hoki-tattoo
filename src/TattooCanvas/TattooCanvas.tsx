@@ -4,7 +4,7 @@ import ImgTattoo from '~images/tattoo.jpg';
 import { SPOTS } from '../const';
 import { Spot } from './Spot';
 import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from './const';
-import './TattooCanvas.css';
+import './TattooCanvas.scss';
 
 export const TattooCanvas = ({ height }: TattooCanvasProps) => {
 	const width = getWidthFromHeight(height, ORIGINAL_WIDTH, ORIGINAL_HEIGHT);

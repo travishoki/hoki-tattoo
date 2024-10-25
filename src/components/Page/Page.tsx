@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { BackButton } from '../../InfoBox/BackButton';
 import { Title } from '../Title';
-import './Page.css';
+import './Page.scss';
 
 export const Page = ({ backLink, children, title }: PageProps) => {
 	return (

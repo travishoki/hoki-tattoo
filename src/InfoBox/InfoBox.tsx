@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import './InfoBox.css';
+import './InfoBox.scss';
 
 export const InfoBox = ({ children, height }: InfoBoxProps) => {
 	return (

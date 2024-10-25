@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 import { useLocation, Link } from 'react-router-dom';
-import './Spot.css';
+import './Spot.scss';
 import { firstPath } from './Spot.helpers';
 
 export const Spot = ({ height, link, title, width, x, y }: SpotProps) => {

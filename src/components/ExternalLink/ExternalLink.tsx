@@ -1,5 +1,5 @@
 import React from 'react';
-import './ExternalLink.css';
+import './ExternalLink.scss';
 
 export const ExternalLink = ({ link, title }: ExternalLinkTypes) => {
 	return (

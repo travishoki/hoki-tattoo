@@ -4,7 +4,7 @@ import { TattooCanvas } from './TattooCanvas/TattooCanvas';
 import { InfoBox } from './InfoBox/InfoBox';
 import { HomePage } from './pages/HomePage';
 import { KoiPage } from './pages/KoiPage';
-import './App.css';
+import './App.scss';
 import { SunPage } from './pages/SunPage';
 import { KanjiPage } from './pages/KanjiPage';
 import { AsianVsEuropeanPage } from './pages/AsianVsEuropeanPage';

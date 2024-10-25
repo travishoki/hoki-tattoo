@@ -1,5 +1,5 @@
 import React from 'react';
-import './BackButton.css';
+import './BackButton.scss';
 import { Link } from 'react-router-dom';
 
 export const BackButton = ({ link = '/' }: BackButtonProps) => {
