@@ -22,3 +22,8 @@
 .info-box ul li {
   margin-bottom: 5px;
 }
+
+.info-box img {
+  display: block;
+  margin-bottom: 10px;
+}

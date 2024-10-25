@@ -1,7 +1,7 @@
 import React from "react";
 import { Page } from "./Page";
 import { Title } from "../components/Title";
-import { ExternalLink } from "../components/ExternalLink";
+import { ExternalLink } from "../components/ExternalLink/ExternalLink";
 
 export const DragonColorPage = () => {
   return (
