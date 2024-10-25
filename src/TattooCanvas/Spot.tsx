@@ -9,13 +9,14 @@ export const Spot = ({ height, link, title, width, x, y }: SpotProps) => {
 	const isActive = firstPath(link) === firstPath(location.pathname);
 	const left = x * width;
 	const top = y * height;
+	const to = isActive ? '/' : link;
 
 	return (
 		<Link
 			className={classnames('spot', { active: isActive })}
 			style={{ left, top }}
 			title={title}
-			to={link}
+			to={to}
 		/>
 	);
 };
