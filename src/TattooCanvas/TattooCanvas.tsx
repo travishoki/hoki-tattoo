@@ -7,11 +7,7 @@ import { Spot } from "./Spot";
 import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from "./const";
 import "./TattooCanvas.css";
 
-export const TattooCanvas = ({
-  activeIndex,
-  height,
-  onClick,
-}: TattooCanvasProps) => {
+export const TattooCanvas = ({ height }: TattooCanvasProps) => {
   const location = useLocation();
   const width = getWidthFromHeight(height, ORIGINAL_WIDTH, ORIGINAL_HEIGHT);
 
@@ -31,7 +27,5 @@ export const TattooCanvas = ({
 };
 
 type TattooCanvasProps = {
-  activeIndex: number | null;
   height: number;
-  onClick: (index: number) => void;
 };

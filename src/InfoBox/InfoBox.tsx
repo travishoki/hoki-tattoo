@@ -12,7 +12,7 @@ import { NoMatchPage } from "../pages/NoMatchPage";
 import { DragonColorPage } from "../pages/DragonColorPage";
 import { DragonOriginPage } from "../pages/DragonOriginPage";
 
-export const InfoBox = ({ activeIndex, height, onClear }: InfoBoxProps) => {
+export const InfoBox = ({ height }: InfoBoxProps) => {
   return (
     <div className="info-box" style={{ height }}>
       <div className="info-box-content">
@@ -33,7 +33,5 @@ export const InfoBox = ({ activeIndex, height, onClear }: InfoBoxProps) => {
 };
 
 type InfoBoxProps = {
-  activeIndex: number | null;
   height: number;
-  onClear: () => void;
 };
