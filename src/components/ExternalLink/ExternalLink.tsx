@@ -1,11 +1,14 @@
 import "./ExternalLink.css";
 
-export const ExternalLink = ({
-  title = "Reference Link",
-  link,
-}: ExternalLinkTypes) => {
+export const ExternalLink = ({ title, link }: ExternalLinkTypes) => {
   return (
-    <a href={link} className="external-link" rel="noreferrer" target="_blank">
+    <a
+      href={link}
+      className="external-link"
+      rel="noreferrer"
+      target="_blank"
+      title={title}
+    >
       {title}
     </a>
   );
@@ -13,5 +16,5 @@ export const ExternalLink = ({
 
 type ExternalLinkTypes = {
   link: string;
-  title?: string;
+  title: string;
 };

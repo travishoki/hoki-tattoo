@@ -10,7 +10,10 @@ export const DragonPhysiologyPage = () => {
         deer’s horns, a clam’s belly, a snake’s neck, an eagle’s claws, a
         tiger’s paws and 117 carp scales.
       </p>
-      <ExternalLink link="https://www.dragonsinn.net/chinese-dragons/" />
+      <ExternalLink
+        link="https://www.dragonsinn.net/chinese-dragons/#phy"
+        title="Physiology of Chinese Dragons"
+      />
     </Page>
   );
 };

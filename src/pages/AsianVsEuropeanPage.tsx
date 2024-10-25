@@ -9,7 +9,10 @@ export const AsianVsEuropeanPage = () => {
         of water, and are typically depicted as large, wingless, serpentine
         creatures with clawed feet.
       </p>
-      <ExternalLink link="https://en.m.wikipedia.org/wiki/Japanese_dragon" />
+      <ExternalLink
+        link="https://en.m.wikipedia.org/wiki/Japanese_dragon"
+        title="Japanese dragon"
+      />
     </Page>
   );
 };

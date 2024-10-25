@@ -9,7 +9,10 @@ export const DragonJapaneseVsChinesePage = () => {
         Chinese dragon, especially the three-clawed long (龍) dragons which were
         introduced in Japan from China in ancient times.
       </p>
-      <ExternalLink link="https://en.m.wikipedia.org/wiki/Japanese_dragon" />
+      <ExternalLink
+        link="https://en.m.wikipedia.org/wiki/Japanese_dragon"
+        title="Japanese dragon"
+      />
     </Page>
   );
 };

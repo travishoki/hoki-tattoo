@@ -15,7 +15,10 @@ export const SunPage = () => {
           height="170"
           width="255"
         />
-        <ExternalLink link="https://en.wikipedia.org/wiki/Flag_of_Japan" />
+        <ExternalLink
+          link="https://en.wikipedia.org/wiki/Flag_of_Japan"
+          title="Flag of Japan"
+        />
       </>
 
       <>
@@ -31,7 +34,10 @@ export const SunPage = () => {
           height="147"
           width="220"
         />
-        <ExternalLink link="https://en.wikipedia.org/wiki/Rising_Sun_Flag" />
+        <ExternalLink
+          link="https://en.wikipedia.org/wiki/Rising_Sun_Flag"
+          title="Rising Sun Flag"
+        />
       </>
     </Page>
   );

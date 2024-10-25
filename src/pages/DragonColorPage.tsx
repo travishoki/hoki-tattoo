@@ -47,7 +47,10 @@ export const DragonColorPage = () => {
         </li>
       </ul>
 
-      <ExternalLink link="https://www.dragonsinn.net/chinese-dragons/" />
+      <ExternalLink
+        link="https://www.dragonsinn.net/chinese-dragons/#color"
+        title="Eastern and Chinese Dragons: Colors and Meaning"
+      />
     </Page>
   );
 };
