@@ -37,7 +37,7 @@ export const SPOTS: SpotType[] = [
 	},
 	{
 		link: '/art',
-		title: 'art',
+		title: 'Art',
 		x: 0.81,
 		y: 0.74,
 	},
