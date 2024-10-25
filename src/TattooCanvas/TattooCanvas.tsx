@@ -15,7 +15,7 @@ export const TattooCanvas = ({ height }: TattooCanvasProps) => {
         <Spot key={index} {...spot} height={height} width={width} />
       ))}
 
-      <img src={ImgTattoo} alt="Tattoo" />
+      <img alt="Tattoo" height={height} src={ImgTattoo} width={width} />
     </div>
   );
 };
