@@ -1,9 +1,12 @@
 import React from "react";
 import classnames from "classnames";
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./Spot.css";
 
-export const Spot = ({ isActive, link, title, x, y }: SpotProps) => {
+export const Spot = ({ link, title, x, y }: SpotProps) => {
+  const location = useLocation();
+  const isActive = link === location.pathname;
+
   return (
     <Link
       className={classnames("spot", { active: isActive })}
@@ -15,7 +18,6 @@ export const Spot = ({ isActive, link, title, x, y }: SpotProps) => {
 };
 
 type SpotProps = {
-  isActive: boolean;
   link: string;
   title: string;
   x: number;
