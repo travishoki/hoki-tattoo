@@ -1,11 +1,9 @@
-import React from "react";
-import { Page } from "./Page";
-import { Title } from "../components/Title";
+import { Page } from "../components/Page/Page";
 
 export const KanjiPage = () => {
   return (
-    <Page>
-      <Title>Kanji</Title>
+    <Page title="Kanji">
+      <p>Kanji</p>
     </Page>
   );
 };

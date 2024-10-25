@@ -1,11 +1,9 @@
-import React from "react";
-import { Page } from "./Page";
-import { Title } from "../components/Title";
+import { Page } from "../components/Page/Page";
 
 export const KoiPage = () => {
   return (
-    <Page>
-      <Title>Koi Fish</Title>
+    <Page title="Koi Fish">
+      <p>Koi Fish</p>
     </Page>
   );
 };

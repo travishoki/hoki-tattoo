@@ -1,12 +1,9 @@
-import React from "react";
-import { Page } from "./Page";
-import { Title } from "../components/Title";
+import { Page } from "../components/Page/Page";
 import { ExternalLink } from "../components/ExternalLink/ExternalLink";
 
 export const AsianVsEuropeanPage = () => {
   return (
-    <Page backLink="/dragon">
-      <Title>Asian vs European</Title>
+    <Page backLink="/dragon" title="Asian vs European">
       <p>
         Most Japanese ones are water deities associated with rainfall and bodies
         of water, and are typically depicted as large, wingless, serpentine

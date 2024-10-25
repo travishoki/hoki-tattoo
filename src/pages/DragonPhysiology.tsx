@@ -1,12 +1,9 @@
-import React from "react";
-import { Page } from "./Page";
-import { Title } from "../components/Title";
+import { Page } from "../components/Page/Page";
 import { ExternalLink } from "../components/ExternalLink/ExternalLink";
 
 export const DragonPhysiologyPage = () => {
   return (
-    <Page backLink="/dragon">
-      <Title>Physiology</Title>
+    <Page backLink="/dragon" title="Physiology">
       <p>
         Chinese dragons have nine characteristics which are a complex
         combination. They have a camel’s head, a demon’s eyes, a cow’s ears, a

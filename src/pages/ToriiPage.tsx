@@ -1,11 +1,9 @@
-import React from "react";
-import { Page } from "./Page";
-import { Title } from "../components/Title";
+import { Page } from "../components/Page/Page";
 
 export const ToriiPage = () => {
   return (
-    <Page>
-      <Title>Torii</Title>
+    <Page title="Torii">
+      <p>Torii</p>
     </Page>
   );
 };

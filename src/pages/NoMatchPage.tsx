@@ -1,11 +1,9 @@
-import React from "react";
-import { Title } from "../components/Title";
+import { Page } from "../components/Page/Page";
 
 export const NoMatchPage = () => {
   return (
-    <>
-      <Title>No Match Page</Title>
+    <Page title="No Match Page">
       <p>Page not found</p>
-    </>
+    </Page>
   );
 };

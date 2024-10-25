@@ -1,6 +1,3 @@
-// width: 300
-// height: 650
-
 export const SPOTS: SpotType[] = [
   {
     link: "/dragon",

@@ -1,11 +1,9 @@
-import React from "react";
-import { Title } from "../components/Title";
+import { Page } from "../components/Page/Page";
 
 export const HomePage = () => {
   return (
-    <>
-      <Title>Pick A Spot</Title>
+    <Page title="Pick A Spot">
       <p>Click a circle to learn more</p>
-    </>
+    </Page>
   );
 };

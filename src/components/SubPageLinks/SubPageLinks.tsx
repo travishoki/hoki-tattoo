@@ -1,4 +1,3 @@
-import React from "react";
 import { linkType } from "../../pages/const";
 import { SubPageLink } from "./SubPageLink";
 

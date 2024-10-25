@@ -1,4 +1,3 @@
-import React from "react";
 import "./ExternalLink.css";
 
 export const ExternalLink = ({

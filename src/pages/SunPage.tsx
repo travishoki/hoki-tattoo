@@ -1,13 +1,9 @@
-import React from "react";
-import { Page } from "./Page";
-import { Title } from "../components/Title";
+import { Page } from "../components/Page/Page";
 import { ExternalLink } from "../components/ExternalLink/ExternalLink";
 
 export const SunPage = () => {
   return (
-    <Page>
-      <Title>Sun</Title>
-
+    <Page title="Sun">
       <>
         <p>
           The national flag of Japan is a rectangular white banner with a

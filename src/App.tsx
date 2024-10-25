@@ -1,10 +1,10 @@
-import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { TattooCanvas } from "./TattooCanvas/TattooCanvas";
 import { InfoBox } from "./InfoBox/InfoBox";
 import "./App.css";
 
-const HEIGHT = 650;
+// const HEIGHT = 650;
+const HEIGHT = 500;
 
 function App() {
   return (

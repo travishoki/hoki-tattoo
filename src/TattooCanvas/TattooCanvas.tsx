@@ -1,4 +1,3 @@
-import React from "react";
 import ImgTattoo from "../images/tattoo.jpg";
 import { getWidthFromHeight } from "../helpers/numbers";
 import { SPOTS } from "../const";

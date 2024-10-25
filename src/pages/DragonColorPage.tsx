@@ -1,12 +1,9 @@
-import React from "react";
-import { Page } from "./Page";
-import { Title } from "../components/Title";
+import { Page } from "../components/Page/Page";
 import { ExternalLink } from "../components/ExternalLink/ExternalLink";
 
 export const DragonColorPage = () => {
   return (
-    <Page backLink="/dragon">
-      <Title>Dragon Color</Title>
+    <Page backLink="/dragon" title="Dragon Color">
       <p>Eastern and Chinese Dragons: Colors and Meaning</p>
 
       <ul>
