@@ -11,7 +11,8 @@
 		"eject": "react-scripts eject",
 		"lint": "eslint --ext .js,.ts,.tsx src/",
 		"bounce": "rm -rf node_modules && yarn install",
-		"ts-check": "npx tsc"
+		"ts-check": "npx tsc",
+		"prepare": "husky install"
 	},
 	"dependencies": {
 		"@testing-library/jest-dom": "^6.6.2",
