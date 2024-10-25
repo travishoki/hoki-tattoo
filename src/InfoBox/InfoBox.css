@@ -1,19 +1,21 @@
 .info-box {
-  border: solid 10px #1d1b1b;
-  width: 600px;
+	border: solid 10px #1d1b1b;
+	width: 600px;
 }
 
 .info-box ul {
-  margin: 0;
-  margin-bottom: 10px;
-  padding-left: 20px;
+	margin: 0;
+	margin-bottom: 10px;
+	padding-left: 20px;
 }
 
 .info-box ul li {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .info-box img {
-  display: block;
-  margin-bottom: 10px;
+	display: block;
+	margin-bottom: 10px;
+	max-width: 300px;
+	height: auto;
 }
