@@ -2,6 +2,7 @@
   border: solid 10px #222;
   position: relative;
   width: 600px;
+  overflow-y: scroll;
 }
 
 .info-box-content {
