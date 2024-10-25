@@ -1,8 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { TattooCanvas } from './TattooCanvas/TattooCanvas';
 import { InfoBox } from './InfoBox/InfoBox';
+import { HomePage } from './pages/HomePage';
+import { KoiPage } from './pages/KoiPage';
 import './App.css';
+import { SunPage } from './pages/SunPage';
+import { KanjiPage } from './pages/KanjiPage';
+import { AsianVsEuropeanPage } from './pages/AsianVsEuropeanPage';
+import { DragonColorPage } from './pages/DragonColorPage';
+import { DragonJapaneseVsChinesePage } from './pages/DragonJapaneseVsChinesePage';
+import { DragonPhysiologyPage } from './pages/DragonPhysiology';
+import { DragonPage } from './pages/DragonPage';
+import { JourneyPage } from './pages/JourneyPage';
+import { ToriiPage } from './pages/ToriiPage';
+import { NoMatchPage } from './pages/NoMatchPage';
 
 const HEIGHT = 650;
 
@@ -11,7 +23,31 @@ function App() {
 		<div className="app">
 			<Router>
 				<TattooCanvas height={HEIGHT} />
-				<InfoBox height={HEIGHT} />
+				<InfoBox height={HEIGHT}>
+					<Routes>
+						<Route element={<HomePage />} index path="/" />
+						<Route element={<KoiPage />} path="/koi" />
+						<Route element={<KanjiPage />} path="/kanji" />
+						<Route element={<SunPage />} path="/sun" />
+						<Route
+							element={<AsianVsEuropeanPage />}
+							path="/dragon/asian-vs-european"
+						/>
+						<Route element={<DragonColorPage />} path="/dragon/color" />
+						<Route
+							element={<DragonJapaneseVsChinesePage />}
+							path="/dragon/japanese-vs-chinese"
+						/>
+						<Route
+							element={<DragonPhysiologyPage />}
+							path="/dragon/physiology"
+						/>
+						<Route element={<DragonPage />} path="/dragon" />
+						<Route element={<JourneyPage />} path="/journey" />
+						<Route element={<ToriiPage />} path="/torii" />
+						<Route element={<NoMatchPage />} path="*" />
+					</Routes>{' '}
+				</InfoBox>
 			</Router>
 		</div>
 	);
