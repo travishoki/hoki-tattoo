@@ -1,32 +1,35 @@
+// width: 300
+// height: 650
+
 export const SPOTS: SpotType[] = [
   {
     link: "/dragon",
-    x: 117,
-    y: 102,
+    x: 0.38,
+    y: 0.165,
     title: "Dragon",
   },
   {
     link: "/kanji",
-    x: 10,
-    y: 180,
+    x: 0.05,
+    y: 0.285,
     title: "Kanji",
   },
   {
     link: "/koi",
-    x: 182,
-    y: 425,
+    x: 0.653,
+    y: 0.645,
     title: "Koi",
   },
   {
     link: "/sun",
-    x: 65,
-    y: 126,
+    x: 0.222,
+    y: 0.195,
     title: "Japenese Sun",
   },
   {
     link: "/torii",
-    x: 265,
-    y: 65,
+    x: 0.9,
+    y: 0.11,
     title: "Torii",
   },
 ];
