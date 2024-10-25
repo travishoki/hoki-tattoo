@@ -1,11 +1,13 @@
 .spot {
   background-color: blue;
-  border: solid 2px black;
   border-radius: 50%;
+  border: solid 2px black;
   cursor: pointer;
-  height: 15px;
+  height: 10px;
+  margin-left: -5px;
+  margin-top: -5px;
   position: absolute;
-  width: 15px;
+  width: 10px;
 }
 
 .spot.active {
