@@ -18,12 +18,7 @@ export const TattooCanvas = ({
   return (
     <div className="tattoo-canvas" style={{ height, width: WIDTH }}>
       {SPOTS.map((spot, index) => (
-        <Spot
-          isActive={index === activeIndex}
-          onClick={() => onClick(index)}
-          x={spot.x}
-          y={spot.y}
-        />
+        <Spot key={index} isActive={index === activeIndex} {...spot} />
       ))}
 
       <img src={ImgTattoo} alt="Tattoo" />

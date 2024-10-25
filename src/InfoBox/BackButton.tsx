@@ -1,14 +1,11 @@
 import React from "react";
 import "./BackButton.css";
+import { Link } from "react-router-dom";
 
-export const BackButton = ({ onClick }: InfoBoxProps) => {
+export const BackButton = () => {
   return (
-    <button className="back-button" onClick={onClick}>
+    <Link className="back-button" title="Back" to="/">
       Back
-    </button>
+    </Link>
   );
-};
-
-type InfoBoxProps = {
-  onClick: () => void;
 };

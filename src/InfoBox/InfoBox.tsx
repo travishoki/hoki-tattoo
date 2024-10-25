@@ -1,17 +1,26 @@
 import React from "react";
 import "./InfoBox.css";
-import { Content } from "./Content";
-import { PickASpot } from "./PickASpot";
+import { Route, Routes } from "react-router-dom";
+
+import { HomePage } from "../pages/HomePage";
+import { KoiPage } from "../pages/KoiPage";
+import { DragonPage } from "../pages/DragonPage";
+import { KanjiPage } from "../pages/KanjiPage";
+import { ToriiPage } from "../pages/ToriiPage";
+import { SunPage } from "../pages/SunPage";
 
 export const InfoBox = ({ activeIndex, height, onClear }: InfoBoxProps) => {
   return (
     <div className="info-box" style={{ height }}>
       <div className="info-box-content">
-        {activeIndex === null ? (
-          <PickASpot />
-        ) : (
-          <Content activeIndex={activeIndex} onClear={onClear} />
-        )}
+        <Routes>
+          <Route element={<HomePage />} path="/" />
+          <Route element={<KoiPage />} path="/koi" />
+          <Route element={<KanjiPage />} path="/kanji" />
+          <Route element={<SunPage />} path="/sun" />
+          <Route element={<DragonPage />} path="/dragon" />
+          <Route element={<ToriiPage />} path="/torii" />
+        </Routes>
       </div>
     </div>
   );

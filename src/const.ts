@@ -1,30 +1,30 @@
 export const SPOTS: SpotType[] = [
   {
-    description: "asdf",
+    link: "/dragon",
     x: 117,
     y: 102,
     title: "Dragon",
   },
   {
-    description: "asdf",
+    link: "/kanji",
     x: 10,
     y: 180,
     title: "Kanji",
   },
   {
-    description: "asdf",
+    link: "/koi",
     x: 182,
     y: 425,
     title: "Koi",
   },
   {
-    description: "asdf",
+    link: "/torii",
     x: 265,
     y: 65,
     title: "Torii",
   },
   {
-    description: "asdf",
+    link: "/sun",
     x: 65,
     y: 126,
     title: "Japenese Sun",
@@ -32,7 +32,7 @@ export const SPOTS: SpotType[] = [
 ];
 
 export type SpotType = {
-  description: string;
+  link: string;
   title: string;
   x: number;
   y: number;
