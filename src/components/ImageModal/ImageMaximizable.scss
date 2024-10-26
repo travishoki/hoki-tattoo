@@ -1,10 +1,12 @@
-.image-maximizable {
-	position: relative;
+.image-maximizable-container {
+	display: flex;
+}
 
-	img {
-		margin: 0;
-		display: block;
-	}
+.image-maximizable {
+	display: block;
+	margin: 0;
+	margin-bottom: 20px;
+	position: relative;
 
 	.zoom-overlay {
 		display: none;
@@ -14,6 +16,11 @@
 		.zoom-overlay {
 			display: flex;
 		}
+	}
+
+	img {
+		height: auto;
+		margin: 0;
 	}
 }
 
@@ -25,9 +32,10 @@
 	cursor: pointer;
 	justify-content: center;
 	align-items: center;
-	z-index: 1px;
+	z-index: 1;
 
 	i {
 		font-size: 40px;
+		color: white;
 	}
 }
