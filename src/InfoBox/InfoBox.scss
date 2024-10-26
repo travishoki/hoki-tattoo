@@ -1,6 +1,21 @@
+.app {
+	&.portrait {
+		.info-box {
+			height: calc(100% - 300px);
+			width: 100%;
+		}
+	}
+
+	&.landscape {
+		.info-box {
+			height: 650px;
+			width: 600px;
+		}
+	}
+}
+
 .info-box {
 	border: solid 10px #1d1b1b;
-	width: 600px;
 
 	ul {
 		margin: 0;

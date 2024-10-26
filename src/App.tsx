@@ -1,10 +1,10 @@
 import React from 'react';
+import classNames from 'classnames';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { TattooCanvas } from './TattooCanvas/TattooCanvas';
 import { InfoBox } from './InfoBox/InfoBox';
 import { HomePage } from './pages/HomePage';
 import { KoiPage } from './pages/KoiPage';
-import './App.scss';
 import { SunPage } from './pages/SunPage';
 import { KanjiPage } from './pages/KanjiPage';
 import { AsianVsEuropeanPage } from './pages/AsianVsEuropeanPage';
@@ -18,15 +18,18 @@ import { NoMatchPage } from './pages/NoMatchPage';
 import { ArtPage } from './pages/ArtPage';
 import { ArtNeoTraditionalPage } from './pages/ArtNeoTraditionalPage';
 import { ArtMediumPage } from './pages/ArtMediumPage';
+import { getOrientation } from './App.helpers';
+import './App.scss';
 
-const HEIGHT = 650;
+const orientation = getOrientation();
+const height = orientation === 'landscape' ? 650 : 300;
 
 function App() {
 	return (
-		<div className="app">
+		<div className={classNames('app', orientation)}>
 			<Router>
-				<TattooCanvas height={HEIGHT} />
-				<InfoBox height={HEIGHT}>
+				<TattooCanvas height={height} />
+				<InfoBox>
 					<Routes>
 						<Route element={<HomePage />} index path="/" />
 						<Route element={<KoiPage />} path="/koi" />
