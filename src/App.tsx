@@ -58,7 +58,7 @@ function App() {
 						<Route element={<ArtPage />} path="/art" />
 						<Route element={<ToriiPage />} path="/torii" />
 						<Route element={<NoMatchPage />} path="*" />
-					</Routes>{' '}
+					</Routes>
 				</InfoBox>
 			</Router>
 		</div>
