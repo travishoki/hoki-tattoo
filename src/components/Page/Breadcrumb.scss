@@ -1,0 +1,25 @@
+a.breadcrumb {
+	cursor: pointer;
+}
+
+p.breadcrumb {
+	color: #e3e6e8;
+	margin: 0;
+}
+
+.breadcrumb {
+	align-items: center;
+	border-radius: 8px;
+	border: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	text-decoration: none;
+	text-transform: capitalize;
+
+	i {
+		font-size: 12px;
+		margin-left: 10px;
+	}
+}

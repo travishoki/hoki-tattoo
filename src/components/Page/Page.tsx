@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { BackButton } from '../../InfoBox/BackButton';
+import { Breadcrumbs } from './Breadcrumbs';
 import { Title } from '../Title';
 import './Page.scss';
 
@@ -11,7 +11,7 @@ export const Page = ({ backLink, children, title }: PageProps) => {
 			</header>
 			<div className="page-content">{children}</div>
 			<footer>
-				<BackButton link={backLink} />
+				<Breadcrumbs />
 			</footer>
 		</div>
 	);
