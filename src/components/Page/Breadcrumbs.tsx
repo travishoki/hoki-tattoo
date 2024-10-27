@@ -7,8 +7,6 @@ import './Breadcrumbs.scss';
 export const Breadcrumbs = () => {
 	const location = useLocation();
 	const links = compact(location.pathname.split('/'));
-	console.log('links:');
-	console.dir(links);
 
 	return (
 		<div className="breadcrumbs">
