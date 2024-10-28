@@ -9,4 +9,8 @@ export const ART_LINKS: LinkType[] = [
 		link: '/art/neo-traditional',
 		title: 'Neo Traditional',
 	},
+	{
+		link: '/art/japanese-traditional',
+		title: 'Japanese Traditional',
+	},
 ];

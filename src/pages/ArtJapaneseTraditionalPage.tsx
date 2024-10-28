@@ -23,6 +23,7 @@ export const ArtJapaneseTraditionalPage = () => {
 				its traditional origins or simply appreciate its stunning visual appeal,
 				traditional Japanese tattoos make for a bold and beautiful statement.
 			</p>
+			<img src="https://images.squarespace-cdn.com/content/v1/61f6f914388acb6c7aaf8d6f/1665860329793-4FK278KC83U88TPT91XH/Certified+Tattoo+Studios+-+cody+10.14.22-03.jpg?format=500w" />
 
 			<ExternalLink
 				link="https://certifiedtattoo.com/neo-traditional-tattoos"
