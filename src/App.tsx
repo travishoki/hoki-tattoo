@@ -21,6 +21,7 @@ import { ArtMediumPage } from './pages/ArtMediumPage';
 import { getIsLandscape, getOrientation } from './App.helpers';
 import { MobileContext } from './App.context';
 import './App.scss';
+import { ArtJapaneseTraditionalPage } from './pages/ArtJapaneseTraditionalPage';
 
 const orientation = getOrientation();
 const isLandscape = getIsLandscape();
@@ -65,6 +66,10 @@ function App() {
 							/>
 							<Route element={<DragonPage />} path="/dragon" />
 							<Route element={<JourneyPage />} path="/journey" />
+							<Route
+								element={<ArtJapaneseTraditionalPage />}
+								path="/art/japanese-traditional"
+							/>
 							<Route
 								element={<ArtNeoTraditionalPage />}
 								path="/art/neo-traditional"

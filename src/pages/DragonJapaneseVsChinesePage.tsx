@@ -21,7 +21,7 @@ export const DragonJapaneseVsChinesePage = () => {
 			<ImgCaption text="Chinese Dragon" />
 
 			<img
-				alt="Japenese Dragon"
+				alt="Japanese Dragon"
 				height="400"
 				src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Hokusai_Dragon.jpg/440px-Hokusai_Dragon.jpg"
 				width="400"

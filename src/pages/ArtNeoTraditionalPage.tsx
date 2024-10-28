@@ -5,8 +5,6 @@ import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 export const ArtNeoTraditionalPage = () => {
 	return (
 		<Page backLink="/art" title="Neo Traditional">
-			<p>Neo Traditional</p>
-
 			<p>
 				The neo traditional style combines elements of both traditional and
 				modern tattoo designs, often featuring bold lines, vibrant colors, and a

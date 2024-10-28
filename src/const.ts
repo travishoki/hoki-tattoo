@@ -1,9 +1,21 @@
 export const SPOTS: SpotType[] = [
 	{
+		link: '/art',
+		title: 'Art',
+		x: 0.81,
+		y: 0.74,
+	},
+	{
 		link: '/dragon',
 		title: 'Dragon',
 		x: 0.38,
 		y: 0.165,
+	},
+	{
+		link: '/journey',
+		title: 'Journey',
+		x: 0.8,
+		y: 0.5,
 	},
 	{
 		link: '/kanji',
@@ -19,7 +31,7 @@ export const SPOTS: SpotType[] = [
 	},
 	{
 		link: '/sun',
-		title: 'Japenese Sun',
+		title: 'Sun',
 		x: 0.222,
 		y: 0.195,
 	},
@@ -28,18 +40,6 @@ export const SPOTS: SpotType[] = [
 		title: 'Torii',
 		x: 0.9,
 		y: 0.11,
-	},
-	{
-		link: '/journey',
-		title: 'Journey',
-		x: 0.8,
-		y: 0.5,
-	},
-	{
-		link: '/art',
-		title: 'Art',
-		x: 0.81,
-		y: 0.74,
 	},
 ];
 
