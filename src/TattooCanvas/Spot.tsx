@@ -17,7 +17,9 @@ export const Spot = ({ height, link, title, width, x, y }: SpotProps) => {
 			style={{ left, top }}
 			title={title}
 			to={to}
-		/>
+		>
+			<div className="marker" />
+		</Link>
 	);
 };
 

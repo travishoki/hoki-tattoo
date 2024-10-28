@@ -3,3 +3,7 @@ export const getOrientation = () => {
 
 	return 'landscape';
 };
+
+export const getIsLandscape = () => getOrientation() === 'landscape';
+
+export const getIsPortrait = () => getOrientation() === 'portrait';

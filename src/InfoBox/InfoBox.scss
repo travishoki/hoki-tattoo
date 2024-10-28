@@ -1,8 +1,14 @@
 .app {
 	&.portrait {
 		.info-box {
-			height: calc(100% - 300px);
+			height: 100%;
 			width: 100%;
+		}
+
+		&.open {
+			.info-box {
+				height: calc(100% - 400px);
+			}
 		}
 	}
 
@@ -10,13 +16,12 @@
 		.info-box {
 			height: 650px;
 			width: 600px;
+			border: solid 10px #1d1b1b;
 		}
 	}
 }
 
 .info-box {
-	border: solid 10px #1d1b1b;
-
 	ul {
 		margin: 0;
 		margin-bottom: 10px;

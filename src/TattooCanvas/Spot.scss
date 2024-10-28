@@ -8,6 +8,10 @@
 	margin-top: -5px;
 	position: absolute;
 	width: 10px;
+
+	.marker {
+		border: solid 2px black;
+	}
 }
 
 .spot.active {
