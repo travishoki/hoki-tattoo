@@ -1,8 +1,17 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useContext } from 'react';
+import { getHalfScreenHeight } from '~helpers/screen';
+import { MobileContext } from 'src/App.context';
 import './InfoBox.scss';
 
 export const InfoBox = ({ children }: InfoBoxProps) => {
-	return <div className="info-box">{children}</div>;
+	const { isToggleOpen } = useContext(MobileContext);
+	const height = isToggleOpen ? getHalfScreenHeight() : '100%';
+
+	return (
+		<div className="info-box" style={{ height }}>
+			{children}
+		</div>
+	);
 };
 
 type InfoBoxProps = {

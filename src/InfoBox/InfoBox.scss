@@ -1,14 +1,7 @@
 .app {
 	&.portrait {
 		.info-box {
-			height: 100%;
 			width: 100%;
-		}
-
-		&.open {
-			.info-box {
-				height: calc(100% - 350px);
-			}
 		}
 	}
 
