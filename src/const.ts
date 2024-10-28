@@ -49,3 +49,6 @@ export type SpotType = {
 	x: number;
 	y: number;
 };
+
+export const LAPTOP_HEIGHT = 650;
+export const LAPTOP_WIDTH = 600;

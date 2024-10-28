@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { Breadcrumbs } from './Breadcrumbs';
-import { Title } from '../Title';
+import { Title } from '../Title/Title';
 import { MobileArtworkToggle } from './MobileArtworkToggle';
 import './Page.scss';
 

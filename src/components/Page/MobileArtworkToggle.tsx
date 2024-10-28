@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { getIsLandscape } from '../../App.helpers';
+import { getIsLandscape } from '~helpers/screen';
 import './MobileArtworkToggle.scss';
 import classNames from 'classnames';
 import { MobileContext } from 'src/App.context';

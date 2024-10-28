@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { getHalfScreenHeight } from '~helpers/screen';
+import {
+	getHalfScreenHeight,
+	getIsLandscape,
+	getOrientation,
+} from '~helpers/screen';
 import { TattooCanvas } from './TattooCanvas/TattooCanvas';
 import { InfoBox } from './InfoBox/InfoBox';
 import { HomePage } from './pages/HomePage';
@@ -19,14 +23,14 @@ import { NoMatchPage } from './pages/NoMatchPage';
 import { ArtPage } from './pages/ArtPage';
 import { ArtNeoTraditionalPage } from './pages/ArtNeoTraditionalPage';
 import { ArtMediumPage } from './pages/ArtMediumPage';
-import { getIsLandscape, getOrientation } from './App.helpers';
 import { MobileContext } from './App.context';
 import { ArtJapaneseTraditionalPage } from './pages/ArtJapaneseTraditionalPage';
+import { LAPTOP_HEIGHT } from './const';
 import './App.scss';
 
 const orientation = getOrientation();
 const isLandscape = getIsLandscape();
-const height = isLandscape ? 650 : getHalfScreenHeight();
+const height = isLandscape ? LAPTOP_HEIGHT : getHalfScreenHeight();
 
 function App() {
 	const [isToggleOpen, setIsToggleOpen] = useState(true);

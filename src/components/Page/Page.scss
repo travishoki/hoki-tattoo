@@ -4,6 +4,7 @@
 }
 
 $headerHeight: 80px;
+$mobileArtworkToggle: 80px;
 
 .app {
 	&.portrait {
@@ -11,7 +12,7 @@ $headerHeight: 80px;
 			top: $headerHeight;
 		}
 		.page-content {
-			top: 160px;
+			top: $headerHeight + $mobileArtworkToggle;
 		}
 	}
 
@@ -29,7 +30,7 @@ $headerHeight: 80px;
 .page-content {
 	overflow-y: scroll;
 	position: absolute;
-	bottom: 50px;
+	bottom: 20px;
 }
 
 header {
