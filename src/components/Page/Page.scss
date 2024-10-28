@@ -11,7 +11,7 @@ $headerHeight: 80px;
 			top: $headerHeight;
 		}
 		.page-content {
-			top: 120px;
+			top: 160px;
 		}
 	}
 
@@ -33,7 +33,7 @@ $headerHeight: 80px;
 }
 
 header {
-	align-items: left;
+	align-items: flex-start;
 	display: flex;
 	justify-content: center;
 	height: $headerHeight;
