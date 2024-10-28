@@ -11,16 +11,13 @@ import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 export const KanjiPage = () => {
 	return (
 		<Page title="Kanji">
-			<p>Kanji</p>
 			<img alt="Tattoo" height="400" src={ImgKanji} width="309" />
+			<p>
+				&quot;Hoki&quot; is my family surname. These are the Japanese Kanji
+				characters for Hoki.
+			</p>
+			<p>Hoki roughly translated means &quot;Keaper of Joy&quot;</p>
 
-			<ImageMaximizable
-				alt="Cranes"
-				dimensions={[300, 375]}
-				src={ImgCranesSmall}
-				srcLarge={ImgCranes}
-				srcLargeDimensions={[1638, 2048]}
-			/>
 			<p>
 				This is the 1001 Cranes that my family made for my wedding. They did an
 				awesome job! Each crane was hand folded and shaped into the Japanese
@@ -28,13 +25,19 @@ export const KanjiPage = () => {
 				little kid. I have it hanging in my living room. It will bring luck to
 				my house and family. Thanks family for making this for Lindsey and I.
 			</p>
-
 			<ImageMaximizable
 				alt="Cranes Frame"
 				dimensions={[300, 300]}
 				src={ImgCranesFrameSmall}
 				srcLarge={ImgCranesFrame}
 				srcLargeDimensions={[960, 960]}
+			/>
+			<ImageMaximizable
+				alt="Cranes"
+				dimensions={[300, 375]}
+				src={ImgCranesSmall}
+				srcLarge={ImgCranes}
+				srcLargeDimensions={[1638, 2048]}
 			/>
 		</Page>
 	);
