@@ -25,7 +25,7 @@ import { ArtJapaneseTraditionalPage } from './pages/ArtJapaneseTraditionalPage';
 
 const orientation = getOrientation();
 const isLandscape = getIsLandscape();
-const height = isLandscape ? 650 : 400;
+const height = isLandscape ? 650 : 350;
 
 function App() {
 	const [isToggleOpen, setIsToggleOpen] = useState(true);
