@@ -6,8 +6,6 @@ import { ImgCaption } from '~components/ImgCaption/ImgCaption';
 export const ToriiPage = () => {
 	return (
 		<Page title="Torii">
-			<p>Torii</p>
-
 			<p>
 				A torii (Japanese: 鳥居, [to.ɾi.i]) is a traditional Japanese gate most
 				commonly found at the entrance of or within a Shinto shrine, where it

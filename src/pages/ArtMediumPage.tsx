@@ -9,7 +9,8 @@ export const ArtMediumPage = () => {
 		<Page backLink="/art" title="Medium Traditional">
 			<p>
 				The artwork is drawn on an iPad using an apple pencil. I&apos;m using
-				the Procreate app and eveything is drawn using the studio pen.
+				the Procreate app and eveything is drawn using the studio pen for both
+				the brush and the eraser.
 			</p>
 
 			<ImageMaximizable
