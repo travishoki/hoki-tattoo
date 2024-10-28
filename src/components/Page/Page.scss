@@ -3,10 +3,12 @@
 	height: 100%;
 }
 
+$headerHeight: 80px;
+
 .app {
 	&.portrait {
 		header {
-			top: 60px;
+			top: $headerHeight;
 		}
 		.page-content {
 			top: 120px;
@@ -19,13 +21,9 @@
 		}
 
 		.page-content {
-			top: 60px;
+			top: $headerHeight;
 		}
 	}
-}
-
-header {
-	height: 60px;
 }
 
 .page-content {
@@ -34,22 +32,17 @@ header {
 	bottom: 50px;
 }
 
-header,
-footer {
-	align-items: center;
+header {
+	align-items: left;
 	display: flex;
-	justify-content: left;
+	justify-content: center;
+	height: $headerHeight;
+	flex-direction: column;
 }
 
 header,
-footer,
 .page-content {
 	left: 20px;
 	right: 20px;
 	position: absolute;
-}
-
-footer {
-	height: 50px;
-	bottom: 0;
 }

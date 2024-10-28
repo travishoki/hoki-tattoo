@@ -10,11 +10,9 @@ export const Page = ({ children, title }: PageProps) => {
 			<MobileArtworkToggle />
 			<header>
 				<Title>{title}</Title>
+				<Breadcrumbs />
 			</header>
 			<div className="page-content">{children}</div>
-			<footer>
-				<Breadcrumbs />
-			</footer>
 		</div>
 	);
 };
