@@ -1,23 +1,27 @@
 import React from 'react';
 import { Page } from '../components/Page/Page';
 
+import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
+import { SubTitle } from '~components/SubTitle/SubTitle';
 import ImgKanji from '~images/hoki-kanji-original-with-border.jpg';
 import ImgCranes from '~images/1001-cranes.jpg';
 import ImgCranesSmall from '~images/1001-cranes-small.jpg';
 import ImgCranesFrame from '~images/1001-cranes-frame.jpg';
 import ImgCranesFrameSmall from '~images/1001-cranes-frame-small.jpg';
-import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 
 export const KanjiPage = () => {
 	return (
 		<Page title="Kanji">
-			<img alt="Tattoo" height="400" src={ImgKanji} width="309" />
+			<SubTitle>Kanji</SubTitle>
 			<p>
 				&quot;Hoki&quot; is my family surname. These are the Japanese Kanji
 				characters for Hoki.
 			</p>
+			<img alt="Kanji" height="400" src={ImgKanji} width="309" />
+
 			<p>Hoki roughly translated means &quot;Keaper of Joy&quot;</p>
 
+			<SubTitle>1001 Cranes</SubTitle>
 			<p>
 				This is the 1001 Cranes that my family made for my wedding. They did an
 				awesome job! Each crane was hand folded and shaped into the Japanese

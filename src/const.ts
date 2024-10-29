@@ -1,3 +1,12 @@
+// Text Info Box
+export const LAPTOP_HEIGHT = 650;
+export const LAPTOP_WIDTH = 600;
+
+// Tattoo Size
+export const ORIGINAL_WIDTH = 1179;
+export const ORIGINAL_HEIGHT = 2047;
+
+// Tattoo Spots
 export const SPOTS: SpotType[] = [
 	{
 		link: '/art',
@@ -49,6 +58,3 @@ export type SpotType = {
 	x: number;
 	y: number;
 };
-
-export const LAPTOP_HEIGHT = 650;
-export const LAPTOP_WIDTH = 600;

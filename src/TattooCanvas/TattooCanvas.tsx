@@ -1,10 +1,9 @@
 import React from 'react';
 import { getWidthFromHeight } from '~helpers/numbers';
 import ImgTattoo from '~images/tattoo.jpg';
-import { SPOTS } from '../const';
+import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH, SPOTS } from '../const';
 import { Spot } from './Spot';
 import { MagnifyingGlass } from './MagnifyingGlass';
-import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from './const';
 import './TattooCanvas.scss';
 
 export const TattooCanvas = ({ height }: TattooCanvasProps) => {
