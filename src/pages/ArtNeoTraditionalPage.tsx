@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page } from '../components/Page/Page';
 import { ExternalLink } from '~components/ExternalLink/ExternalLink';
+import { SubTitle } from '~components/SubTitle/SubTitle';
 
 export const ArtNeoTraditionalPage = () => {
 	return (
@@ -49,7 +50,7 @@ export const ArtNeoTraditionalPage = () => {
 				title="certifiedtattoo.com"
 			/>
 
-			<p>What are the rules to neo traditional?</p>
+			<SubTitle>What are the rules to neo traditional?</SubTitle>
 			<p>
 				Neo-traditional is a tattoo style that combines elements of traditional
 				tattooing with contemporary influences. While the rules of neo
@@ -92,6 +93,16 @@ export const ArtNeoTraditionalPage = () => {
 			<ExternalLink
 				link="https://certifiedtattoo.com/blog/what-does-neo-traditional-mean-appreciating-timeless-artifacts-of-history"
 				title="certifiedtattoo.com"
+			/>
+
+			<SubTitle>Neo Meaning</SubTitle>
+			<p>
+				A combining form meaning “new”, “recent”, “revived”, “modified,”. used
+				in the formation of compound words.
+			</p>
+			<ExternalLink
+				link="https://www.dictionary.com/browse/neo"
+				title="dictionary.com"
 			/>
 		</Page>
 	);
