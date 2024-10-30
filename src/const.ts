@@ -17,8 +17,8 @@ export const SPOTS: SpotType[] = [
 	{
 		link: '/dragon',
 		title: 'Dragon',
-		x: 0.385,
-		y: 0.125,
+		x: 0.355,
+		y: 0.1,
 	},
 	{
 		link: '/journey',
