@@ -8,23 +8,24 @@ import {
 } from '~helpers/screen';
 import { TattooCanvas } from './TattooCanvas/TattooCanvas';
 import { InfoBox } from './InfoBox/InfoBox';
-import { HomePage } from './pages/HomePage';
-import { KoiPage } from './pages/KoiPage';
-import { SunPage } from './pages/SunPage';
-import { KanjiPage } from './pages/KanjiPage';
+import { ArtJapaneseTraditionalPage } from './pages/ArtJapaneseTraditionalPage';
+import { ArtMediumPage } from './pages/ArtMediumPage';
+import { ArtNeoTraditionalPage } from './pages/ArtNeoTraditionalPage';
+import { ArtPage } from './pages/ArtPage';
 import { AsianVsEuropeanPage } from './pages/AsianVsEuropeanPage';
 import { DragonColorPage } from './pages/DragonColorPage';
 import { DragonJapaneseVsChinesePage } from './pages/DragonJapaneseVsChinesePage';
-import { DragonPhysiologyPage } from './pages/DragonPhysiology';
 import { DragonPage } from './pages/DragonPage';
+import { DragonPhysiologyPage } from './pages/DragonPhysiology';
+import { HomePage } from './pages/HomePage';
 import { JourneyPage } from './pages/JourneyPage';
-import { ToriiPage } from './pages/ToriiPage';
+import { KanjiPage } from './pages/KanjiPage';
+import { KoiPage } from './pages/KoiPage';
 import { NoMatchPage } from './pages/NoMatchPage';
-import { ArtPage } from './pages/ArtPage';
-import { ArtNeoTraditionalPage } from './pages/ArtNeoTraditionalPage';
-import { ArtMediumPage } from './pages/ArtMediumPage';
+import { SunPage } from './pages/SunPage';
+import { ToriiPage } from './pages/ToriiPage';
+import { WhyPage } from './pages/WhyPage';
 import { MobileContext } from './App.context';
-import { ArtJapaneseTraditionalPage } from './pages/ArtJapaneseTraditionalPage';
 import { LAPTOP_HEIGHT } from './const';
 import './App.scss';
 
@@ -82,6 +83,7 @@ function App() {
 							<Route element={<ArtMediumPage />} path="/art/art-medium" />
 							<Route element={<ArtPage />} path="/art" />
 							<Route element={<ToriiPage />} path="/torii" />
+							<Route element={<WhyPage />} path="/why" />
 							<Route element={<NoMatchPage />} path="*" />
 						</Routes>
 					</InfoBox>
