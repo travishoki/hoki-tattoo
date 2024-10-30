@@ -1,5 +1,12 @@
+.app {
+	&.landscape {
+		.tattoo-canvas {
+			border: solid 10px #1d1b1b;
+		}
+	}
+}
+
 .tattoo-canvas {
-	border: solid 10px #1d1b1b;
 	position: relative;
 
 	img {

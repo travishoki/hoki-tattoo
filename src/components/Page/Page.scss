@@ -36,9 +36,10 @@ $mobileArtworkToggle: 80px;
 header {
 	align-items: flex-start;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	height: $headerHeight;
 	flex-direction: column;
+	padding: 10px 0 0 0;
 }
 
 header,
