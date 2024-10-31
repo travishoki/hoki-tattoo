@@ -1,6 +1,8 @@
 import React from 'react';
 import { Page } from '../components/Page/Page';
 import ImgSisterTattoo from '~images/sister-tattoo.jpg';
+import ImgSisterTattooSmall from '~images/sister-tattoo-small.jpg';
+import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 
 export const WhyPage = () => {
 	return (
@@ -11,7 +13,13 @@ export const WhyPage = () => {
 				getting mine too. I&apos;ve just always wanted to and haven&apos;t done
 				it yet.
 			</p>
-			<img alt="Sister Tattoos" src={ImgSisterTattoo} />
+			<ImageMaximizable
+				alt="Sister Tattoos"
+				dimensions={[300, 400]}
+				src={ImgSisterTattooSmall}
+				srcLarge={ImgSisterTattoo}
+				srcLargeDimensions={[3024, 4032]}
+			/>
 		</Page>
 	);
 };
