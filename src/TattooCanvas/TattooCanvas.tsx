@@ -1,6 +1,6 @@
 import React from 'react';
 import { getWidthFromHeight } from '~helpers/numbers';
-import ImgTattoo from '~images/tattoo.jpg';
+import ImgTattooSmall from '~images/tattoo-small.jpg';
 import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH, SPOTS } from '../const';
 import { Spot } from './Spot';
 import { MagnifyingGlass } from './MagnifyingGlass';
@@ -15,7 +15,7 @@ export const TattooCanvas = ({ height }: TattooCanvasProps) => {
 				<Spot key={index} {...spot} height={height} width={width} />
 			))}
 
-			<img alt="Tattoo" height={height} src={ImgTattoo} width={width} />
+			<img alt="Tattoo" height={height} src={ImgTattooSmall} width={width} />
 
 			<MagnifyingGlass />
 		</div>

@@ -1,0 +1,16 @@
+ul.procreate-settings-list {
+	background: #1d1b1b;
+	list-style-type: none;
+	padding: 10px;
+	max-width: 300px;
+
+	li {
+		justify-content: space-between;
+		align-items: center;
+		display: flex;
+
+		p {
+			margin: 0;
+		}
+	}
+}

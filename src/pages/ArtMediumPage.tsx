@@ -3,6 +3,8 @@ import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import ImgIpadArt from '~images/ipad-art.jpg';
 import ImgIpadArtSmall from '~images/ipad-art-small.jpg';
 import { Page } from '../components/Page/Page';
+import { SubTitle } from '~components/SubTitle/SubTitle';
+import './ArtMediumPage.scss';
 
 export const ArtMediumPage = () => {
 	return (
@@ -20,6 +22,28 @@ export const ArtMediumPage = () => {
 				srcLarge={ImgIpadArt}
 				srcLargeDimensions={[510, 510]}
 			/>
+
+			<SubTitle>Procreate Settings</SubTitle>
+			<ul className="procreate-settings-list">
+				<li>
+					<p>Canvas:</p> <p>A4</p>
+				</li>
+				<li>
+					<p>Pixel Width:</p> <p>2480px</p>
+				</li>
+				<li>
+					<p>Pixel Height:</p> <p>3508px</p>
+				</li>
+				<li>
+					<p>Physical Width:</p> <p>8.267 (210mm)</p>
+				</li>
+				<li>
+					<p>Physical Height:</p> <p>11.693 (297mm)</p>
+				</li>
+				<li>
+					<p>DPI:</p> <p>300</p>
+				</li>
+			</ul>
 		</Page>
 	);
 };
