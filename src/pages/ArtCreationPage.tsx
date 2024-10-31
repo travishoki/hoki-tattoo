@@ -10,11 +10,11 @@ import Img3dModel2Small from '~images/3d-model-2-small.jpg';
 
 import { Page } from '../components/Page/Page';
 import { SubTitle } from '~components/SubTitle/SubTitle';
-import './ArtMediumPage.scss';
+import './ArtCreationPage.scss';
 
-export const ArtMediumPage = () => {
+export const ArtCreationPage = () => {
 	return (
-		<Page backLink="/art" title="Medium Traditional">
+		<Page backLink="/art" title="Art Creation">
 			<p>
 				The artwork is drawn on an iPad using an apple pencil. I&apos;m using
 				the Procreate app and eveything is drawn using the studio pen for both
@@ -41,10 +41,10 @@ export const ArtMediumPage = () => {
 					<p>Pixel Height:</p> <p>3508px</p>
 				</li>
 				<li>
-					<p>Physical Width:</p> <p>8.267 (210mm)</p>
+					<p>Physical Width:</p> <p>8.267&quot; (210mm)</p>
 				</li>
 				<li>
-					<p>Physical Height:</p> <p>11.693 (297mm)</p>
+					<p>Physical Height:</p> <p>11.693&quot; (297mm)</p>
 				</li>
 				<li>
 					<p>DPI:</p> <p>300</p>

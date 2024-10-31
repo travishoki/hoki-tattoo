@@ -2,8 +2,8 @@ import { LinkType } from './DragonPage.const';
 
 export const ART_LINKS: LinkType[] = [
 	{
-		link: '/art/art-medium',
-		title: 'Art Medium',
+		link: '/art/art-creation',
+		title: 'Art Creation',
 	},
 	{
 		link: '/art/neo-traditional',

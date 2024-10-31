@@ -9,7 +9,7 @@ import {
 import { TattooCanvas } from './TattooCanvas/TattooCanvas';
 import { InfoBox } from './InfoBox/InfoBox';
 import { ArtJapaneseTraditionalPage } from './pages/ArtJapaneseTraditionalPage';
-import { ArtMediumPage } from './pages/ArtMediumPage';
+import { ArtCreationPage } from './pages/ArtCreationPage';
 import { ArtNeoTraditionalPage } from './pages/ArtNeoTraditionalPage';
 import { ArtPage } from './pages/ArtPage';
 import { AsianVsEuropeanPage } from './pages/AsianVsEuropeanPage';
@@ -80,7 +80,7 @@ function App() {
 								element={<ArtNeoTraditionalPage />}
 								path="/art/neo-traditional"
 							/>
-							<Route element={<ArtMediumPage />} path="/art/art-medium" />
+							<Route element={<ArtCreationPage />} path="/art/art-creation" />
 							<Route element={<ArtPage />} path="/art" />
 							<Route element={<ToriiPage />} path="/torii" />
 							<Route element={<WhyPage />} path="/why" />
