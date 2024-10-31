@@ -2,6 +2,12 @@ import React from 'react';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import ImgIpadArt from '~images/ipad-art.jpg';
 import ImgIpadArtSmall from '~images/ipad-art-small.jpg';
+
+import Img3dModel1 from '~images/3d-model-1.jpg';
+import Img3dModel1Small from '~images/3d-model-1-small.jpg';
+import Img3dModel2 from '~images/3d-model-2.jpg';
+import Img3dModel2Small from '~images/3d-model-2-small.jpg';
+
 import { Page } from '../components/Page/Page';
 import { SubTitle } from '~components/SubTitle/SubTitle';
 import './ArtMediumPage.scss';
@@ -44,6 +50,21 @@ export const ArtMediumPage = () => {
 					<p>DPI:</p> <p>300</p>
 				</li>
 			</ul>
+
+			<ImageMaximizable
+				alt="3D Model"
+				dimensions={[300, 300]}
+				src={Img3dModel1Small}
+				srcLarge={Img3dModel1}
+				srcLargeDimensions={[2048, 2048]}
+			/>
+			<ImageMaximizable
+				alt="3D Model"
+				dimensions={[300, 300]}
+				src={Img3dModel2Small}
+				srcLarge={Img3dModel2}
+				srcLargeDimensions={[2048, 2048]}
+			/>
 		</Page>
 	);
 };
