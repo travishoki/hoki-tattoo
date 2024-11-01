@@ -38,3 +38,32 @@
 		position: relative;
 	}
 }
+
+// Image Controls
+.image-modal-control-left,
+.image-modal-control-right {
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	font-size: 30px;
+	height: 50px;
+	position: fixed;
+	text-align: center;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-modal-control-left {
+	left: 10px;
+	i {
+		margin-left: -5px;
+	}
+}
+.image-modal-control-right {
+	right: 10px;
+	i {
+		margin-right: -5px;
+	}
+}

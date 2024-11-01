@@ -2,9 +2,7 @@ import React from 'react';
 
 import { ImageModal } from '~components/ImageModal/ImageModal';
 import { useImageModal } from '~components/ImageModal/useImageModal';
-
-import './ImageMaximizable.scss';
-import classNames from 'classnames';
+import { ImageItem, ImageItemProps } from './ImageItem';
 
 export const ImageMaximizable = ({
 	alt,
@@ -17,9 +15,6 @@ export const ImageMaximizable = ({
 }: ImageMaximizableProps) => {
 	const { onClickImage, onCloseImage, selectedImg } = useImageModal();
 
-	const height = dimensions[1];
-	const width = dimensions[0];
-
 	return (
 		<>
 			{selectedImg && (
@@ -30,31 +25,18 @@ export const ImageMaximizable = ({
 				/>
 			)}
 
-			<div className="image-maximizable-container">
-				<div className={classNames('image-maximizable', className)}>
-					<div className="zoom-overlay" onClick={() => onClickImage(src)}>
-						<i className="fa fa-search-plus" />
-					</div>
-
-					<img
-						alt={alt}
-						className={imageClassName}
-						height={height}
-						src={src}
-						width={width}
-					/>
-				</div>
-			</div>
+			<ImageItem
+				alt={alt}
+				className={className}
+				dimensions={dimensions}
+				imageClassName={imageClassName}
+				onClick={onClickImage}
+				src={src}
+				srcLarge={srcLarge}
+				srcLargeDimensions={srcLargeDimensions}
+			/>
 		</>
 	);
 };
 
-export type ImageMaximizableProps = {
-	alt: string;
-	className?: string;
-	dimensions: number[];
-	imageClassName?: string;
-	src: string;
-	srcLarge?: string;
-	srcLargeDimensions?: number[];
-};
+export type ImageMaximizableProps = Omit<ImageItemProps, 'onClick'>;

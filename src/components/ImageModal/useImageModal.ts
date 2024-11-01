@@ -8,6 +8,7 @@ export const useImageModal = () => {
 	};
 
 	const onCloseImage = () => {
+		console.log('%c---- %s -----', 'font-size: 12px;', 'onCloseImage');
 		setSelectedImg(null);
 	};
 
