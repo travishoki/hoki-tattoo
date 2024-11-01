@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page } from '../components/Page/Page';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
+import { ImageMaximizableGroup } from '~components/ImageModal/ImageMaximizableGroup';
 import { SubTitle } from '~components/SubTitle/SubTitle';
 import ImgCranes from '~images/1001-cranes.jpg';
 import ImgCranesFrame from '~images/1001-cranes-frame.jpg';
@@ -35,19 +36,23 @@ export const KanjiPage = () => {
 				little kid. I have it hanging in my living room. It will bring luck to
 				my house and family. Thanks family for making this for Lindsey and I.
 			</p>
-			<ImageMaximizable
-				alt="Cranes Frame"
-				dimensions={[300, 300]}
-				src={ImgCranesFrameSmall}
-				srcLarge={ImgCranesFrame}
-				srcLargeDimensions={[960, 960]}
-			/>
-			<ImageMaximizable
-				alt="Cranes"
-				dimensions={[300, 375]}
-				src={ImgCranesSmall}
-				srcLarge={ImgCranes}
-				srcLargeDimensions={[1638, 2048]}
+			<ImageMaximizableGroup
+				list={[
+					{
+						alt: 'Cranes Frame',
+						dimensions: [300, 300],
+						src: ImgCranesFrameSmall,
+						srcLarge: ImgCranesFrame,
+						srcLargeDimensions: [960, 960],
+					},
+					{
+						alt: 'Cranes',
+						dimensions: [300, 375],
+						src: ImgCranesSmall,
+						srcLarge: ImgCranes,
+						srcLargeDimensions: [1638, 2048],
+					},
+				]}
 			/>
 		</Page>
 	);

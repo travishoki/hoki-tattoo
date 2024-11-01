@@ -47,7 +47,7 @@ export const ImageMaximizable = ({
 	);
 };
 
-type ImageMaximizableProps = {
+export type ImageMaximizableProps = {
 	alt: string;
 	className?: string;
 	dimensions: number[];
