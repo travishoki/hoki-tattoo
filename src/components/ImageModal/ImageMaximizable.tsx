@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { ImageModal } from '~components/ImageModal/ImageModal';
-import { useImageModal } from '~components/ImageModal/useImageModal';
 import { ImageItem, ImageItemProps } from './ImageItem';
 
 export const ImageMaximizable = ({
@@ -13,7 +12,15 @@ export const ImageMaximizable = ({
 	srcLarge,
 	srcLargeDimensions,
 }: ImageMaximizableProps) => {
-	const { onClickImage, onCloseImage, selectedImg } = useImageModal();
+	const [selectedImg, setSelectedImg] = useState<string | null>(null);
+
+	const onClickImage = (src: string) => {
+		setSelectedImg(src);
+	};
+
+	const onCloseImage = () => {
+		setSelectedImg(null);
+	};
 
 	return (
 		<>
