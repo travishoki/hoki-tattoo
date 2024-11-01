@@ -37,6 +37,7 @@ export const ImageModal = ({
 					<i className="fa fa-chevron-right" />
 				</div>
 			)}
+
 			<div className="image-modal-inner">
 				<img
 					src={src}
