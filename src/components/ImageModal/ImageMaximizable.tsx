@@ -21,29 +21,31 @@ export const ImageMaximizable = ({
 	const width = dimensions[0];
 
 	return (
-		<div className="image-maximizable-container">
-			<div className={classNames('image-maximizable', className)}>
-				{selectedImg && (
-					<ImageModal
-						dimensions={srcLargeDimensions ?? dimensions}
-						onClose={onCloseImage}
-						src={srcLarge ?? selectedImg}
-					/>
-				)}
-
-				<div className="zoom-overlay" onClick={() => onClickImage(src)}>
-					<i className="fa fa-search-plus" />
-				</div>
-
-				<img
-					alt={alt}
-					className={imageClassName}
-					height={height}
-					src={src}
-					width={width}
+		<>
+			{selectedImg && (
+				<ImageModal
+					dimensions={srcLargeDimensions ?? dimensions}
+					onClose={onCloseImage}
+					src={srcLarge ?? selectedImg}
 				/>
+			)}
+
+			<div className="image-maximizable-container">
+				<div className={classNames('image-maximizable', className)}>
+					<div className="zoom-overlay" onClick={() => onClickImage(src)}>
+						<i className="fa fa-search-plus" />
+					</div>
+
+					<img
+						alt={alt}
+						className={imageClassName}
+						height={height}
+						src={src}
+						width={width}
+					/>
+				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
