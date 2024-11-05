@@ -1,12 +1,18 @@
 import React, { useContext } from 'react';
 import classNames from 'classnames';
-import { getIsLandscape } from '~helpers/screen';
+import { getHalfScreenHeight, getIsLandscape } from '~helpers/screen';
 import { MobileContext } from 'src/App.context';
+import './Arrow.scss';
 
 const isLandscape = getIsLandscape();
 
 export const Arrow = () => {
-	const { isToggleOpen, setIsToggleOpen } = useContext(MobileContext);
+	const { setViewerSize, viewerSize } = useContext(MobileContext);
+
+	const onClick = () => {
+		const newViewerSize = viewerSize > 0 ? 0 : getHalfScreenHeight();
+		setViewerSize(newViewerSize);
+	};
 
 	if (isLandscape) return null;
 
@@ -14,9 +20,10 @@ export const Arrow = () => {
 		<i
 			className={classNames(
 				'fa',
-				isToggleOpen ? 'fa-chevron-up' : 'fa-chevron-down',
+				'mobile-artwork-toggle-arrow',
+				viewerSize > 0 ? 'fa-chevron-up' : 'fa-chevron-down',
 			)}
-			onClick={setIsToggleOpen}
+			onClick={onClick}
 		/>
 	);
 };

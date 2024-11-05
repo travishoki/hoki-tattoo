@@ -31,26 +31,23 @@ import './App.scss';
 
 const orientation = getOrientation();
 const isLandscape = getIsLandscape();
-const height = isLandscape ? LAPTOP_HEIGHT : getHalfScreenHeight();
+
+const halfScreenHeight = getHalfScreenHeight();
 
 function App() {
-	const [isToggleOpen, setIsToggleOpen] = useState(true);
+	const [viewerSize, setViewerSize] = useState(halfScreenHeight);
+	const height = isLandscape ? LAPTOP_HEIGHT : viewerSize;
 
-	const handleSetIsToggleOpen = () => setIsToggleOpen(!isToggleOpen);
+	const handlesetViewerSize = (newViewerSize: number) =>
+		setViewerSize(newViewerSize);
 
 	return (
-		<div
-			className={classNames(
-				'app',
-				orientation,
-				isToggleOpen ? 'open' : undefined,
-			)}
-		>
+		<div className={classNames('app', orientation)}>
 			<MobileContext.Provider
-				value={{ isToggleOpen, setIsToggleOpen: handleSetIsToggleOpen }}
+				value={{ setViewerSize: handlesetViewerSize, viewerSize }}
 			>
 				<Router>
-					{isToggleOpen && <TattooCanvas height={height} />}
+					{viewerSize > 0 && <TattooCanvas height={height} />}
 					<InfoBox>
 						<Routes>
 							<Route element={<HomePage />} index path="/" />

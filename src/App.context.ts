@@ -1,6 +1,7 @@
 import { createContext } from 'react';
+import { getHalfScreenHeight } from '~helpers/screen';
 
 export const MobileContext = createContext({
-	isToggleOpen: true,
-	setIsToggleOpen: () => {},
+	setViewerSize: (_viewerSize: number) => {},
+	viewerSize: getHalfScreenHeight(),
 });
