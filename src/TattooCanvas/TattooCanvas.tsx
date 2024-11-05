@@ -12,7 +12,13 @@ export const TattooCanvas = ({ height }: TattooCanvasProps) => {
 	return (
 		<div className="tattoo-canvas" style={{ height, width }}>
 			{SPOTS.map((spot, index) => (
-				<Spot key={index} {...spot} height={height} width={width} />
+				<Spot
+					key={index}
+					{...spot}
+					height={height}
+					num={index + 1}
+					width={width}
+				/>
 			))}
 
 			<img alt="Tattoo" height={height} src={ImgTattooSmall} width={width} />

@@ -4,7 +4,7 @@ import { useLocation, Link } from 'react-router-dom';
 import './Spot.scss';
 import { firstPath } from './Spot.helpers';
 
-export const Spot = ({ height, link, title, width, x, y }: SpotProps) => {
+export const Spot = ({ height, link, num, title, width, x, y }: SpotProps) => {
 	const location = useLocation();
 	const isActive = firstPath(link) === firstPath(location.pathname);
 	const left = x * width;
@@ -18,7 +18,7 @@ export const Spot = ({ height, link, title, width, x, y }: SpotProps) => {
 			title={title}
 			to={to}
 		>
-			<div className="marker" />
+			<div className="marker">{num}</div>
 		</Link>
 	);
 };
@@ -26,6 +26,7 @@ export const Spot = ({ height, link, title, width, x, y }: SpotProps) => {
 type SpotProps = {
 	height: number;
 	link: string;
+	num: number;
 	title: string;
 	width: number;
 	x: number;
