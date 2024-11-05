@@ -13,7 +13,6 @@ import ImgKanjiSmall from '~images/hoki-kanji-small.jpg';
 export const KanjiPage = () => {
 	return (
 		<Page title="Kanji">
-			<SubTitle>Kanji</SubTitle>
 			<p>
 				&quot;Hoki&quot; is my family surname. These are the Japanese Kanji
 				characters for Hoki.

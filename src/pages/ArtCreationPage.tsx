@@ -53,17 +53,17 @@ export const ArtCreationPage = () => {
 
 			<ImageMaximizable
 				alt="3D Model"
-				dimensions={[300, 300]}
+				dimensions={[300, 400]}
 				src={Img3dModel1Small}
 				srcLarge={Img3dModel1}
-				srcLargeDimensions={[2048, 2048]}
+				srcLargeDimensions={[1274, 1698]}
 			/>
 			<ImageMaximizable
 				alt="3D Model"
-				dimensions={[300, 300]}
+				dimensions={[300, 400]}
 				src={Img3dModel2Small}
 				srcLarge={Img3dModel2}
-				srcLargeDimensions={[2048, 2048]}
+				srcLargeDimensions={[1408, 1878]}
 			/>
 		</Page>
 	);
