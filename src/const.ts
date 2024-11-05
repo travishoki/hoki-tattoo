@@ -11,8 +11,8 @@ export const SPOTS: SpotType[] = [
 	{
 		link: '/kanji',
 		title: 'Kanji',
-		x: 0.137,
-		y: 0.285,
+		x: 0.12,
+		y: 0.3,
 	},
 	{
 		link: '/dragon',
@@ -29,8 +29,8 @@ export const SPOTS: SpotType[] = [
 	{
 		link: '/sun',
 		title: 'Sun',
-		x: 0.28,
-		y: 0.165,
+		x: 0.25,
+		y: 0.183,
 	},
 	{
 		link: '/torii',
