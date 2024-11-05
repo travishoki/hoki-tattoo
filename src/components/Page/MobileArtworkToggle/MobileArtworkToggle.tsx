@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { getIsLandscape } from '~helpers/screen';
 import { Arrow } from './Arrow';
-// import { Dragger } from './Dragger';
+import { Dragger } from './Dragger';
 import { MobileContext } from 'src/App.context';
 import { TOGGLE_HEIGHT } from 'src/const';
 import './MobileArtworkToggle.scss';
@@ -18,7 +18,7 @@ export const MobileArtworkToggle = () => {
 			className="mobile-artwork-toggle"
 			style={{ height: TOGGLE_HEIGHT, top: viewerHeight }}
 		>
-			{/* <Dragger /> */}
+			<Dragger />
 			<Arrow />
 		</div>
 	);

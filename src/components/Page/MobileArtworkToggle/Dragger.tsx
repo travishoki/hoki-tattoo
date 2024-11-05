@@ -1,17 +1,23 @@
 import React, { useContext } from 'react';
-import { getHalfScreenHeight } from '~helpers/screen';
 import { MobileContext } from 'src/App.context';
 import './Dragger.scss';
 
 export const Dragger = () => {
-	const { setViewerHeight, viewerHeight } = useContext(MobileContext);
+	const { setViewerHeight } = useContext(MobileContext);
 
-	const onClick = () => {
-		const newviewerHeight = viewerHeight > 0 ? 0 : getHalfScreenHeight();
-		setViewerHeight(newviewerHeight);
+	const onDrag = (e: React.DragEvent<HTMLDivElement>) => {
+		if (e.clientY === 0) {
+			return;
+		}
+
+		setViewerHeight(e.clientY);
 	};
 
 	return (
-		<i className="fa fa-bars mobile-artwork-toggle-dragger" onClick={onClick} />
+		<i
+			className="fa fa-bars mobile-artwork-toggle-dragger"
+			draggable
+			onDrag={onDrag}
+		/>
 	);
 };
