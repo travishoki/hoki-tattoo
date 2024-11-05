@@ -9,28 +9,16 @@ export const ORIGINAL_HEIGHT = 3508;
 // Tattoo Spots
 export const SPOTS: SpotType[] = [
 	{
-		link: '/art',
-		title: 'Art',
-		x: 0.8,
-		y: 0.8,
+		link: '/kanji',
+		title: 'Kanji',
+		x: 0.137,
+		y: 0.285,
 	},
 	{
 		link: '/dragon',
 		title: 'Dragon',
 		x: 0.37,
 		y: 0.1,
-	},
-	{
-		link: '/journey',
-		title: 'Journey',
-		x: 0.74,
-		y: 0.53,
-	},
-	{
-		link: '/kanji',
-		title: 'Kanji',
-		x: 0.137,
-		y: 0.285,
 	},
 	{
 		link: '/koi',
@@ -49,12 +37,6 @@ export const SPOTS: SpotType[] = [
 		title: 'Torii',
 		x: 0.82,
 		y: 0.059,
-	},
-	{
-		link: '/why',
-		title: 'Why',
-		x: 0.05,
-		y: 0.04,
 	},
 ];
 
