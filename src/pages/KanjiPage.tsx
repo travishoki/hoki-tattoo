@@ -8,16 +8,18 @@ import ImgCranesFrame from '~images/1001-cranes-frame.jpg';
 import ImgCranesFrameSmall from '~images/1001-cranes-frame-small.jpg';
 import ImgCranesSmall from '~images/1001-cranes-small.jpg';
 import ImgKanji from '~images/hoki-kanji.jpg';
+import ImgKanjiMeaning from '~images/kanji-meaning.jpg';
 import ImgKanjiSmall from '~images/hoki-kanji-small.jpg';
+import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 
 export const KanjiPage = () => {
 	return (
 		<Page title="Kanji">
 			<p>
 				&quot;Hoki&quot; is my family surname. These are the Japanese Kanji
-				characters for Hoki.
+				characters for Hoki. My Bachan has approved this as the Kanji my family
+				uses.
 			</p>
-
 			<ImageMaximizable
 				alt="Kanji"
 				dimensions={[300, 389]}
@@ -27,6 +29,14 @@ export const KanjiPage = () => {
 			/>
 			<p>Hoki roughly translated means &quot;Keaper of Joy&quot;</p>
 
+			<SubTitle>Kanji Meaning</SubTitle>
+			<img src={ImgKanjiMeaning} />
+			<p>保 means &quot;preserve, protect, guarantee.&quot;</p>
+			<p>喜 means &quot;joy, rejoice, pleasure.&quot;</p>
+			<ExternalLink
+				link="https://japanese-names.info/last-name/hoki"
+				title="Kanji Names & Meanings - 6 variations"
+			/>
 			<SubTitle>1001 Cranes</SubTitle>
 			<p>
 				This is the 1001 Cranes that my family made for my wedding. They did an
