@@ -1,10 +1,9 @@
 import React, { useContext } from 'react';
-import classNames from 'classnames';
 import { getHalfScreenHeight } from '~helpers/screen';
 import { MobileContext } from 'src/App.context';
-import './Arrow.scss';
+import './Dragger.scss';
 
-export const Arrow = () => {
+export const Dragger = () => {
 	const { setViewerSize, viewerSize } = useContext(MobileContext);
 
 	const onClick = () => {
@@ -13,13 +12,6 @@ export const Arrow = () => {
 	};
 
 	return (
-		<i
-			className={classNames(
-				'fa',
-				'mobile-artwork-toggle-arrow',
-				viewerSize > 0 ? 'fa-chevron-up' : 'fa-chevron-down',
-			)}
-			onClick={onClick}
-		/>
+		<i className="fa fa-bars mobile-artwork-toggle-dragger" onClick={onClick} />
 	);
 };
