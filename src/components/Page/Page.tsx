@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
-import { Breadcrumbs } from './Breadcrumbs';
+import { Breadcrumbs } from './Breadcrumbs/Breadcrumbs';
 import { Title } from '../Title/Title';
-import { MobileArtworkToggle } from './MobileArtworkToggle';
+import { MobileArtworkToggle } from './MobileArtworkToggle/MobileArtworkToggle';
 import './Page.scss';
 
 export const Page = ({ children, title }: PageProps) => {
