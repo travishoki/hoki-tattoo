@@ -7,6 +7,7 @@ const numberedSpots = SPOTS.map((spot, index) => ({
 	link: spot.link,
 	title: `${index + 1}) ${spot.title}`,
 }));
+
 const links = [
 	...numberedSpots,
 	{
@@ -14,12 +15,12 @@ const links = [
 		title: 'Art',
 	},
 	{
-		link: '/why',
-		title: 'Why',
-	},
-	{
 		link: '/journey',
 		title: 'Journey',
+	},
+	{
+		link: '/why',
+		title: 'Why',
 	},
 ];
 
