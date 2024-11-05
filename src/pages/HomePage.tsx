@@ -10,7 +10,7 @@ export const HomePage = () => {
 		<Page title="Pick A Spot">
 			<p>Click a circle to learn more</p>
 
-			<SubPageLinks links={links} />
+			<SubPageLinks links={links} showNums />
 		</Page>
 	);
 };

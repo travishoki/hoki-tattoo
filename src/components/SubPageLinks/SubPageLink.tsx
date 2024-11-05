@@ -6,7 +6,7 @@ import './SubPageLink.scss';
 export const SubPageLink = ({ link, num, title }: SubPageLinkProps) => {
 	return (
 		<Link className="sub-page-link" to={link}>
-			{num}) {title}
+			{num && `${num})`} {title}
 		</Link>
 	);
 };

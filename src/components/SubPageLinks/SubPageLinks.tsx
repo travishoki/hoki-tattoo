@@ -3,13 +3,20 @@ import { sortBy } from 'lodash';
 import { LinkType } from '../../pages/DragonPage.const';
 import { SubPageLink } from './SubPageLink';
 
-export const SubPageLinks = ({ links }: SubPageLinksProps) => {
+export const SubPageLinks = ({
+	links,
+	showNums = false,
+}: SubPageLinksProps) => {
 	const sortedLinks = sortBy(links, ['title']);
 
 	return (
 		<>
 			{sortedLinks.map((link, index) => (
-				<SubPageLink key={index} num={index + 1} {...link} />
+				<SubPageLink
+					key={index}
+					num={showNums ? index + 1 : undefined}
+					{...link}
+				/>
 			))}
 		</>
 	);
@@ -17,4 +24,5 @@ export const SubPageLinks = ({ links }: SubPageLinksProps) => {
 
 type SubPageLinksProps = {
 	links: LinkType[];
+	showNums?: boolean;
 };
