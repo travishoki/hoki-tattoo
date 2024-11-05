@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { MobileArtworkToggle } from '~components/Page/MobileArtworkToggle/MobileArtworkToggle';
 import {
 	getHalfScreenHeight,
 	getIsLandscape,
@@ -47,7 +48,9 @@ function App() {
 				value={{ setViewerSize: handlesetViewerSize, viewerSize }}
 			>
 				<Router>
-					{viewerSize > 0 && <TattooCanvas height={height} />}
+					<TattooCanvas height={height} />
+					{!isLandscape && <MobileArtworkToggle />}
+
 					<InfoBox>
 						<Routes>
 							<Route element={<HomePage />} index path="/" />

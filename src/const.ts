@@ -6,6 +6,9 @@ export const LAPTOP_WIDTH = 600;
 export const ORIGINAL_WIDTH = 2480;
 export const ORIGINAL_HEIGHT = 3508;
 
+// Toggle Height
+export const TOGGLE_HEIGHT = 60;
+
 // Tattoo Spots
 export const SPOTS: SpotType[] = [
 	{

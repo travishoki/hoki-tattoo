@@ -1,36 +1,12 @@
-.page {
-	position: relative;
-	height: 100%;
-}
-
 $headerHeight: 80px;
 $mobileArtworkToggle: 80px;
 
 .app {
-	&.portrait {
-		header {
-			top: $headerHeight;
-		}
-		.page-content {
-			top: $headerHeight + $mobileArtworkToggle;
-		}
-	}
-
 	&.landscape {
 		header {
 			top: 0;
 		}
-
-		.page-content {
-			top: $headerHeight;
-		}
 	}
-}
-
-.page-content {
-	overflow-y: scroll;
-	position: absolute;
-	bottom: 20px;
 }
 
 header {
@@ -40,11 +16,4 @@ header {
 	height: $headerHeight;
 	flex-direction: column;
 	padding: 10px 0 0 0;
-}
-
-header,
-.page-content {
-	left: 20px;
-	right: 20px;
-	position: absolute;
 }
