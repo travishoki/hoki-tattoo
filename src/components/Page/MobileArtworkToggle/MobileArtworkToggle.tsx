@@ -9,14 +9,14 @@ import './MobileArtworkToggle.scss';
 const isLandscape = getIsLandscape();
 
 export const MobileArtworkToggle = () => {
-	const { viewerSize } = useContext(MobileContext);
+	const { viewerHeight } = useContext(MobileContext);
 
 	if (isLandscape) return null;
 
 	return (
 		<div
 			className="mobile-artwork-toggle"
-			style={{ height: TOGGLE_HEIGHT, top: viewerSize }}
+			style={{ height: TOGGLE_HEIGHT, top: viewerHeight }}
 		>
 			{/* <Dragger /> */}
 			<Arrow />

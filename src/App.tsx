@@ -36,16 +36,16 @@ const isLandscape = getIsLandscape();
 const halfScreenHeight = getHalfScreenHeight();
 
 function App() {
-	const [viewerSize, setViewerSize] = useState(halfScreenHeight);
-	const height = isLandscape ? LAPTOP_HEIGHT : viewerSize;
+	const [viewerHeight, setViewerHeight] = useState(halfScreenHeight);
+	const height = isLandscape ? LAPTOP_HEIGHT : viewerHeight;
 
-	const handlesetViewerSize = (newViewerSize: number) =>
-		setViewerSize(newViewerSize);
+	const handlesetViewerHeight = (newviewerHeight: number) =>
+		setViewerHeight(newviewerHeight);
 
 	return (
 		<div className={classNames('app', orientation)}>
 			<MobileContext.Provider
-				value={{ setViewerSize: handlesetViewerSize, viewerSize }}
+				value={{ setViewerHeight: handlesetViewerHeight, viewerHeight }}
 			>
 				<Router>
 					<TattooCanvas height={height} />

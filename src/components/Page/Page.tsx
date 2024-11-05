@@ -11,14 +11,14 @@ const screenHeight = getSreenHeight();
 const BORDER_SIZE = 10;
 
 export const Page = ({ children, title }: PageProps) => {
-	const { viewerSize } = useContext(MobileContext);
+	const { viewerHeight } = useContext(MobileContext);
 
 	const desktopHeight =
 		LAPTOP_HEIGHT - HEADER_HEIGHT - BORDER_SIZE - BORDER_SIZE;
 
 	const mobileHeight =
 		screenHeight -
-		viewerSize -
+		viewerHeight -
 		HEADER_HEIGHT -
 		TOGGLE_HEIGHT -
 		BORDER_SIZE -

@@ -4,11 +4,11 @@ import { MobileContext } from 'src/App.context';
 import './Dragger.scss';
 
 export const Dragger = () => {
-	const { setViewerSize, viewerSize } = useContext(MobileContext);
+	const { setViewerHeight, viewerHeight } = useContext(MobileContext);
 
 	const onClick = () => {
-		const newViewerSize = viewerSize > 0 ? 0 : getHalfScreenHeight();
-		setViewerSize(newViewerSize);
+		const newviewerHeight = viewerHeight > 0 ? 0 : getHalfScreenHeight();
+		setViewerHeight(newviewerHeight);
 	};
 
 	return (
