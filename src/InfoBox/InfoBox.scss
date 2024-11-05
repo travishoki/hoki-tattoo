@@ -9,13 +9,12 @@
 	&.landscape {
 		.info-box {
 			border: solid 10px #1d1b1b;
+			position: relative;
 		}
 	}
 }
 
 .info-box {
-	overflow-y: scroll;
-
 	ul,
 	ol {
 		margin: 0;
@@ -25,10 +24,6 @@
 		li {
 			margin-bottom: 5px;
 		}
-	}
-
-	.info-box-inner {
-		padding: 20px;
 	}
 
 	img {

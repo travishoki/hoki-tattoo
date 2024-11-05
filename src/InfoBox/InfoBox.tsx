@@ -8,12 +8,7 @@ const isLandscape = getIsLandscape();
 const screenHeight = getSreenHeight();
 
 export const InfoBox = ({ children }: InfoBoxProps) => {
-	console.log('%c---- %s -----', 'font-size: 12px;', 'InfoBox');
-
 	const { viewerSize } = useContext(MobileContext);
-
-	console.log(`viewerSize: ${viewerSize}`);
-	console.log(`TOGGLE_HEIGHT: ${TOGGLE_HEIGHT}`);
 
 	const mobileHeight = `${screenHeight - viewerSize - TOGGLE_HEIGHT}px`;
 	const tabletHeight = `${LAPTOP_HEIGHT}px`;
@@ -25,7 +20,7 @@ export const InfoBox = ({ children }: InfoBoxProps) => {
 
 	return (
 		<div className="info-box" style={{ height, top, width }}>
-			<div className="info-box-inner">{children}</div>
+			{children}
 		</div>
 	);
 };

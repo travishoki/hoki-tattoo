@@ -1,0 +1,14 @@
+header {
+	align-items: flex-start;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	.header-inner {
+		padding: 10px 20px;
+	}
+}

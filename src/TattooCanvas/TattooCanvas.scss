@@ -1,4 +1,11 @@
 .app {
+	&.portrait {
+		.tattoo-canvas {
+			position: fixed;
+			top: 0;
+		}
+	}
+
 	&.landscape {
 		.tattoo-canvas {
 			border: solid 10px #1d1b1b;
