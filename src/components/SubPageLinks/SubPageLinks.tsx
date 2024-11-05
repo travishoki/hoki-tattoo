@@ -9,7 +9,7 @@ export const SubPageLinks = ({ links }: SubPageLinksProps) => {
 	return (
 		<>
 			{sortedLinks.map((link, index) => (
-				<SubPageLink key={index} {...link} />
+				<SubPageLink key={index} num={index + 1} {...link} />
 			))}
 		</>
 	);
