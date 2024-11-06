@@ -7,7 +7,7 @@ export const ORIGINAL_WIDTH = 2480;
 export const ORIGINAL_HEIGHT = 3508;
 
 // Heights
-export const TOGGLE_HEIGHT = 60;
+export const MOBILE_SIZER_HEIGHT = 60;
 export const HEADER_HEIGHT = 100;
 
 // Tattoo Spots

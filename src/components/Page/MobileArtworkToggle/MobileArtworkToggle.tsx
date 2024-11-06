@@ -1,25 +1,36 @@
 import React, { useContext } from 'react';
-import { getIsLandscape } from '~helpers/screen';
+import Draggable, { DraggableData, DraggableEvent } from 'react-draggable';
+import { getScreenHeight, getIsLandscape } from '~helpers/screen';
+import { MOBILE_SIZER_HEIGHT } from 'src/const';
 import { Arrow } from './Arrow';
 import { Dragger } from './Dragger';
 import { MobileContext } from 'src/App.context';
-import { TOGGLE_HEIGHT } from 'src/const';
 import './MobileArtworkToggle.scss';
 
 const isLandscape = getIsLandscape();
 
 export const MobileArtworkToggle = () => {
-	const { viewerHeight } = useContext(MobileContext);
+	const { setViewerHeight, viewerHeight } = useContext(MobileContext);
 
 	if (isLandscape) return null;
 
+	const onDrag = (e: DraggableEvent, data: DraggableData) => {
+		const { y } = data;
+
+		setViewerHeight(y);
+	};
+
 	return (
-		<div
-			className="mobile-artwork-toggle"
-			style={{ height: TOGGLE_HEIGHT, top: viewerHeight }}
+		<Draggable
+			axis="y"
+			bounds={{ bottom: getScreenHeight() - MOBILE_SIZER_HEIGHT, top: 0 }}
+			defaultPosition={{ x: 0, y: viewerHeight }}
+			onDrag={onDrag}
 		>
-			<Dragger />
-			<Arrow />
-		</div>
+			<div className="mobile-artwork-toggle">
+				<Dragger />
+				<Arrow />
+			</div>
+		</Draggable>
 	);
 };

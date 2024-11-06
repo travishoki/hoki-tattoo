@@ -1,9 +1,9 @@
-export const getSreenHeight = () => window.innerHeight;
-export const getSreenWidth = () => window.innerWidth;
-export const getHalfScreenHeight = () => getSreenHeight() / 2;
+export const getScreenHeight = () => window.innerHeight;
+export const getScreenWidth = () => window.innerWidth;
+export const getHalfScreenHeight = () => getScreenHeight() / 2;
 
 export const getOrientation = () => {
-	if (getSreenHeight() > getSreenWidth()) return 'portrait';
+	if (getScreenHeight() > getScreenWidth()) return 'portrait';
 
 	return 'landscape';
 };
