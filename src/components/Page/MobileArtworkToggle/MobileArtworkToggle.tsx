@@ -34,6 +34,7 @@ export const MobileArtworkToggle = () => {
 			axis="y"
 			bounds={{ bottom: getScreenHeight() - MOBILE_SIZER_HEIGHT, top: 0 }}
 			defaultPosition={{ x: 0, y: viewerHeight }}
+			handle=".mobile-artwork-toggle-dragger"
 			onDrag={onDrag}
 		>
 			<div className="mobile-artwork-toggle">
