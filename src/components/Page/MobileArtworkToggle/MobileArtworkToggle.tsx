@@ -34,10 +34,10 @@ export const MobileArtworkToggle = () => {
 		<Draggable
 			axis="y"
 			bounds={{ bottom: getScreenHeight() - MOBILE_SIZER_HEIGHT, top: 0 }}
-			defaultPosition={{ x: 0, y: viewerHeight }}
 			handle=".mobile-artwork-toggle-dragger"
 			nodeRef={nodeRef}
 			onDrag={onDrag}
+			position={{ x: 0, y: viewerHeight }}
 		>
 			<div className="mobile-artwork-toggle" ref={nodeRef}>
 				<Dragger />
