@@ -14,19 +14,30 @@ export const TattooCanvas = ({ height }: TattooCanvasProps) => {
 
 	const left = isLandscape ? 0 : (getScreenWidth() - width) / 2;
 
+	const artWidth = width;
+	const artHeight = height;
+
 	return (
-		<div className="tattoo-canvas" style={{ height, left, width }}>
+		<div
+			className="tattoo-canvas"
+			style={{ height: artHeight, left, width: artWidth }}
+		>
 			{SPOTS.map((spot, index) => (
 				<Spot
 					key={index}
 					{...spot}
-					height={height}
+					height={artHeight}
 					num={index + 1}
-					width={width}
+					width={artWidth}
 				/>
 			))}
 
-			<img alt="Tattoo" height={height} src={ImgTattooSmall} width={width} />
+			<img
+				alt="Tattoo"
+				height={artHeight}
+				src={ImgTattooSmall}
+				width={artWidth}
+			/>
 
 			<MagnifyingGlass />
 		</div>
