@@ -5,6 +5,7 @@ import { MobileArtworkToggle } from '~components/Page/MobileArtworkToggle/Mobile
 import {
 	getHalfScreenHeight,
 	getIsLandscape,
+	getIsPortrait,
 	getOrientation,
 	getScreenHeight,
 } from '~helpers/screen';
@@ -31,7 +32,7 @@ import { MobileContext } from './App.context';
 import './App.scss';
 
 const orientation = getOrientation();
-const isLandscape = getIsLandscape();
+const isPortrait = getIsPortrait();
 
 const halfScreenHeight = getHalfScreenHeight();
 
@@ -48,7 +49,7 @@ function App() {
 			>
 				<Router>
 					<TattooCanvas />
-					{!isLandscape && <MobileArtworkToggle />}
+					{isPortrait && <MobileArtworkToggle />}
 
 					<InfoBox>
 						<Routes>

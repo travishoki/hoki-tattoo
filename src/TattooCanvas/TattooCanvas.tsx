@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import { getHeightFromWidth, getWidthFromHeight } from '~helpers/numbers';
-import { getScreenWidth, getIsLandscape } from '~helpers/screen';
+import { getScreenWidth, getIsLandscape, getIsPortrait } from '~helpers/screen';
 import ImgTattooSmall from '~images/tattoo-small.jpg';
 import {
 	LAPTOP_HEIGHT,
+	LAPTOP_WIDTH,
 	ORIGINAL_HEIGHT,
 	ORIGINAL_WIDTH,
 	SPOTS,
@@ -14,6 +15,7 @@ import './TattooCanvas.scss';
 import { MobileContext } from 'src/App.context';
 
 const isLandscape = getIsLandscape();
+const isPortrait = getIsPortrait();
 const screenWidth = getScreenWidth();
 
 export const TattooCanvas = () => {
@@ -21,20 +23,27 @@ export const TattooCanvas = () => {
 	const viewerWidth = isLandscape ? LAPTOP_HEIGHT : screenWidth;
 
 	let width: number;
-	let height: number;
-	const shouldUseHeight =
-		viewerWidth / viewerHeight > ORIGINAL_WIDTH / ORIGINAL_HEIGHT;
+	let height = LAPTOP_HEIGHT;
+	let left = 0;
+	let top = 0;
 
-	if (shouldUseHeight) {
-		height = viewerHeight;
-		width = getWidthFromHeight(height, ORIGINAL_WIDTH, ORIGINAL_HEIGHT);
+	if (isPortrait) {
+		const shouldUseHeight =
+			viewerWidth / viewerHeight > ORIGINAL_WIDTH / ORIGINAL_HEIGHT;
+
+		if (shouldUseHeight) {
+			height = viewerHeight;
+			width = getWidthFromHeight(height, ORIGINAL_WIDTH, ORIGINAL_HEIGHT);
+		} else {
+			width = viewerWidth;
+			height = getHeightFromWidth(width, ORIGINAL_WIDTH, ORIGINAL_HEIGHT);
+		}
+
+		left = (getScreenWidth() - width) / 2;
+		top = (viewerHeight - height) / 2;
 	} else {
-		width = viewerWidth;
-		height = getHeightFromWidth(width, ORIGINAL_WIDTH, ORIGINAL_HEIGHT);
+		width = getWidthFromHeight(height, ORIGINAL_WIDTH, ORIGINAL_HEIGHT);
 	}
-
-	const left = isLandscape ? 0 : (getScreenWidth() - width) / 2;
-	const top = isLandscape ? 0 : (viewerHeight - height) / 2;
 
 	return (
 		<div className="tattoo-canvas" style={{ height, left, top, width }}>
