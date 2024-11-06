@@ -5,7 +5,7 @@ import {
 	getIsLandscape,
 	getHalfScreenHeight,
 } from '~helpers/screen';
-import { MOBILE_SIZER_HEIGHT } from 'src/const';
+import { MIN_VIEWER_HEIGHT, MOBILE_SIZER_HEIGHT } from 'src/const';
 import { Arrow } from './Arrow';
 import { Dragger } from './Dragger';
 import { MobileContext } from 'src/App.context';
@@ -33,14 +33,17 @@ export const MobileArtworkToggle = () => {
 	return (
 		<Draggable
 			axis="y"
-			bounds={{ bottom: getScreenHeight() - MOBILE_SIZER_HEIGHT, top: 0 }}
+			bounds={{
+				bottom: getScreenHeight() - MOBILE_SIZER_HEIGHT,
+				top: MIN_VIEWER_HEIGHT,
+			}}
 			handle=".mobile-artwork-toggle-dragger"
 			nodeRef={nodeRef}
 			onDrag={onDrag}
 			position={{ x: 0, y: viewerHeight }}
 		>
 			<div className="mobile-artwork-toggle" ref={nodeRef}>
-				<Dragger />
+				{viewerHeight >= MIN_VIEWER_HEIGHT && <Dragger />}
 				<Arrow onClick={onClickArrow} />
 			</div>
 		</Draggable>
