@@ -6,6 +6,7 @@ import {
 	getHalfScreenHeight,
 	getIsLandscape,
 	getOrientation,
+	getScreenHeight,
 } from '~helpers/screen';
 import { TattooCanvas } from './TattooCanvas/TattooCanvas';
 import { InfoBox } from './InfoBox/InfoBox';
@@ -48,7 +49,7 @@ function App() {
 				value={{ setViewerHeight: handlesetViewerHeight, viewerHeight }}
 			>
 				<Router>
-					<TattooCanvas height={height} />
+					<TattooCanvas />
 					{!isLandscape && <MobileArtworkToggle />}
 
 					<InfoBox>
