@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { ImageModal } from '~components/ImageModal/ImageModal';
+import ImgTattoo from '~images/tattoo.jpg';
 import ImgTattooSmall from '~images/tattoo-small.jpg';
-import { SPOTS } from '../const';
+import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH, SPOTS } from '../const';
 import { Spot } from './Spot';
 import { MagnifyingGlass } from './MagnifyingGlass';
 import './TattooCanvas.scss';
@@ -10,27 +12,41 @@ export const TattooCanvas = ({
 	viewerHeight,
 	viewerWidth,
 }: TattooCanvasProps) => {
+	const [selectedImg, setSelectedImg] = useState(false);
+
 	const { height, left, top, width } = getCanvasDimensions(
 		viewerWidth,
 		viewerHeight,
 	);
 
+	const onClickMaginifyGlass = () => setSelectedImg(!selectedImg);
+
 	return (
-		<div className="tattoo-canvas" style={{ height, left, top, width }}>
-			{SPOTS.map((spot, index) => (
-				<Spot
-					key={index}
-					{...spot}
-					height={height}
-					num={index + 1}
-					width={width}
+		<>
+			{selectedImg && (
+				<ImageModal
+					dimensions={[ORIGINAL_WIDTH, ORIGINAL_HEIGHT]}
+					onClose={onClickMaginifyGlass}
+					src={ImgTattoo}
 				/>
-			))}
+			)}
 
-			<img alt="Tattoo" height={height} src={ImgTattooSmall} width={width} />
+			<div className="tattoo-canvas" style={{ height, left, top, width }}>
+				{SPOTS.map((spot, index) => (
+					<Spot
+						key={index}
+						{...spot}
+						height={height}
+						num={index + 1}
+						width={width}
+					/>
+				))}
 
-			<MagnifyingGlass />
-		</div>
+				<img alt="Tattoo" height={height} src={ImgTattooSmall} width={width} />
+
+				<MagnifyingGlass onClick={onClickMaginifyGlass} />
+			</div>
+		</>
 	);
 };
 
