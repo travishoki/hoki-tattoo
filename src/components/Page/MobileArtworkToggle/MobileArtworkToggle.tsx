@@ -14,6 +14,7 @@ import './MobileArtworkToggle.scss';
 const isLandscape = getIsLandscape();
 
 export const MobileArtworkToggle = () => {
+	const nodeRef = React.useRef(null);
 	const { setViewerHeight, viewerHeight } = useContext(MobileContext);
 
 	if (isLandscape) return null;
@@ -35,9 +36,10 @@ export const MobileArtworkToggle = () => {
 			bounds={{ bottom: getScreenHeight() - MOBILE_SIZER_HEIGHT, top: 0 }}
 			defaultPosition={{ x: 0, y: viewerHeight }}
 			handle=".mobile-artwork-toggle-dragger"
+			nodeRef={nodeRef}
 			onDrag={onDrag}
 		>
-			<div className="mobile-artwork-toggle">
+			<div className="mobile-artwork-toggle" ref={nodeRef}>
 				<Dragger />
 				<Arrow onClick={onClickArrow} />
 			</div>
