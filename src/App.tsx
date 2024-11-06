@@ -3,11 +3,9 @@ import classNames from 'classnames';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { MobileArtworkToggle } from '~components/Page/MobileArtworkToggle/MobileArtworkToggle';
 import {
-	getHalfScreenHeight,
 	getIsLandscape,
 	getIsPortrait,
 	getOrientation,
-	getScreenHeight,
 	getScreenWidth,
 } from '~helpers/screen';
 import { TattooCanvas } from './TattooCanvas/TattooCanvas';
@@ -30,43 +28,24 @@ import { SunPage } from './pages/SunPage';
 import { ToriiPage } from './pages/ToriiPage';
 import { WhyPage } from './pages/WhyPage';
 import { MobileContext } from './App.context';
-import './App.scss';
-import { getCanvasDimensions } from './TattooCanvas/TattooCanvas.helpers';
 import { LAPTOP_HEIGHT } from './const';
+import './App.scss';
+import { getIntialViewerHeight } from './App.helpers';
 
 const orientation = getOrientation();
 const isPortrait = getIsPortrait();
 const isLandscape = getIsLandscape();
 const screenWidth = getScreenWidth();
 
-const halfScreenHeight = getHalfScreenHeight();
-
 function App() {
-	const [viewerHeight, setViewerHeight] = useState(halfScreenHeight);
+	const [viewerHeight, setViewerHeight] = useState(getIntialViewerHeight());
 	const viewerWidth = isLandscape ? LAPTOP_HEIGHT : screenWidth;
-
-	const handlesetViewerHeight = (newviewerHeight: number) =>
-		setViewerHeight(newviewerHeight);
-
-	const {
-		height: canvasHeight,
-		left: canvasLeft,
-		top: canvasTop,
-		width: canvasWidth,
-	} = getCanvasDimensions(viewerWidth, viewerHeight);
 
 	return (
 		<div className={classNames('app', orientation)}>
-			<MobileContext.Provider
-				value={{ setViewerHeight: handlesetViewerHeight, viewerHeight }}
-			>
+			<MobileContext.Provider value={{ setViewerHeight, viewerHeight }}>
 				<Router>
-					<TattooCanvas
-						height={canvasHeight}
-						left={canvasLeft}
-						top={canvasTop}
-						width={canvasWidth}
-					/>
+					<TattooCanvas viewerHeight={viewerHeight} viewerWidth={viewerWidth} />
 					{isPortrait && <MobileArtworkToggle />}
 
 					<InfoBox>

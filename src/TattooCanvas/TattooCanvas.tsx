@@ -4,13 +4,17 @@ import { SPOTS } from '../const';
 import { Spot } from './Spot';
 import { MagnifyingGlass } from './MagnifyingGlass';
 import './TattooCanvas.scss';
+import { getCanvasDimensions } from './TattooCanvas.helpers';
 
 export const TattooCanvas = ({
-	height,
-	left,
-	top,
-	width,
+	viewerHeight,
+	viewerWidth,
 }: TattooCanvasProps) => {
+	const { height, left, top, width } = getCanvasDimensions(
+		viewerWidth,
+		viewerHeight,
+	);
+
 	return (
 		<div className="tattoo-canvas" style={{ height, left, top, width }}>
 			{SPOTS.map((spot, index) => (
@@ -31,8 +35,6 @@ export const TattooCanvas = ({
 };
 
 type TattooCanvasProps = {
-	height: number;
-	left: number;
-	top: number;
-	width: number;
+	viewerHeight: number;
+	viewerWidth: number;
 };
