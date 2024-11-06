@@ -1,6 +1,10 @@
 import React, { useContext } from 'react';
 import Draggable, { DraggableData, DraggableEvent } from 'react-draggable';
-import { getScreenHeight, getIsLandscape } from '~helpers/screen';
+import {
+	getScreenHeight,
+	getIsLandscape,
+	getHalfScreenHeight,
+} from '~helpers/screen';
 import { MOBILE_SIZER_HEIGHT } from 'src/const';
 import { Arrow } from './Arrow';
 import { Dragger } from './Dragger';
@@ -20,6 +24,11 @@ export const MobileArtworkToggle = () => {
 		setViewerHeight(y);
 	};
 
+	const onClickArrow = () => {
+		const newviewerHeight = viewerHeight > 0 ? 0 : getHalfScreenHeight();
+		setViewerHeight(newviewerHeight);
+	};
+
 	return (
 		<Draggable
 			axis="y"
@@ -29,7 +38,7 @@ export const MobileArtworkToggle = () => {
 		>
 			<div className="mobile-artwork-toggle">
 				<Dragger />
-				<Arrow />
+				<Arrow onClick={onClickArrow} />
 			</div>
 		</Draggable>
 	);
