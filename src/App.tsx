@@ -28,7 +28,6 @@ import { SunPage } from './pages/SunPage';
 import { ToriiPage } from './pages/ToriiPage';
 import { WhyPage } from './pages/WhyPage';
 import { MobileContext } from './App.context';
-import { LAPTOP_HEIGHT } from './const';
 import './App.scss';
 
 const orientation = getOrientation();
@@ -38,7 +37,6 @@ const halfScreenHeight = getHalfScreenHeight();
 
 function App() {
 	const [viewerHeight, setViewerHeight] = useState(halfScreenHeight);
-	const height = isLandscape ? LAPTOP_HEIGHT : viewerHeight;
 
 	const handlesetViewerHeight = (newviewerHeight: number) =>
 		setViewerHeight(newviewerHeight);
