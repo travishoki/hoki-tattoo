@@ -8,6 +8,7 @@ import {
 	getIsPortrait,
 	getOrientation,
 	getScreenHeight,
+	getScreenWidth,
 } from '~helpers/screen';
 import { TattooCanvas } from './TattooCanvas/TattooCanvas';
 import { InfoBox } from './InfoBox/InfoBox';
@@ -30,17 +31,29 @@ import { ToriiPage } from './pages/ToriiPage';
 import { WhyPage } from './pages/WhyPage';
 import { MobileContext } from './App.context';
 import './App.scss';
+import { getCanvasDimensions } from './TattooCanvas/TattooCanvas.helpers';
+import { LAPTOP_HEIGHT } from './const';
 
 const orientation = getOrientation();
 const isPortrait = getIsPortrait();
+const isLandscape = getIsLandscape();
+const screenWidth = getScreenWidth();
 
 const halfScreenHeight = getHalfScreenHeight();
 
 function App() {
 	const [viewerHeight, setViewerHeight] = useState(halfScreenHeight);
+	const viewerWidth = isLandscape ? LAPTOP_HEIGHT : screenWidth;
 
 	const handlesetViewerHeight = (newviewerHeight: number) =>
 		setViewerHeight(newviewerHeight);
+
+	const {
+		height: canvasHeight,
+		left: canvasLeft,
+		top: canvasTop,
+		width: canvasWidth,
+	} = getCanvasDimensions(viewerWidth, viewerHeight);
 
 	return (
 		<div className={classNames('app', orientation)}>
@@ -48,7 +61,12 @@ function App() {
 				value={{ setViewerHeight: handlesetViewerHeight, viewerHeight }}
 			>
 				<Router>
-					<TattooCanvas />
+					<TattooCanvas
+						height={canvasHeight}
+						left={canvasLeft}
+						top={canvasTop}
+						width={canvasWidth}
+					/>
 					{isPortrait && <MobileArtworkToggle />}
 
 					<InfoBox>

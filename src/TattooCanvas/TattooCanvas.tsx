@@ -1,25 +1,16 @@
-import React, { useContext } from 'react';
-import { getScreenWidth, getIsLandscape } from '~helpers/screen';
+import React from 'react';
 import ImgTattooSmall from '~images/tattoo-small.jpg';
-import { LAPTOP_HEIGHT, SPOTS } from '../const';
+import { SPOTS } from '../const';
 import { Spot } from './Spot';
 import { MagnifyingGlass } from './MagnifyingGlass';
 import './TattooCanvas.scss';
-import { MobileContext } from 'src/App.context';
-import { getCanvasDimensions } from './TattooCanvas.helpers';
 
-const isLandscape = getIsLandscape();
-const screenWidth = getScreenWidth();
-
-export const TattooCanvas = () => {
-	const { viewerHeight } = useContext(MobileContext);
-	const viewerWidth = isLandscape ? LAPTOP_HEIGHT : screenWidth;
-
-	const { height, left, top, width } = getCanvasDimensions(
-		viewerWidth,
-		viewerHeight,
-	);
-
+export const TattooCanvas = ({
+	height,
+	left,
+	top,
+	width,
+}: TattooCanvasProps) => {
 	return (
 		<div className="tattoo-canvas" style={{ height, left, top, width }}>
 			{SPOTS.map((spot, index) => (
@@ -37,4 +28,11 @@ export const TattooCanvas = () => {
 			<MagnifyingGlass />
 		</div>
 	);
+};
+
+type TattooCanvasProps = {
+	height: number;
+	left: number;
+	top: number;
+	width: number;
 };
