@@ -13,11 +13,11 @@ import { getCanvasDimensions, getNewVersion } from './TattooCanvas.helpers';
 import { VersionClicker } from './VersionClicker';
 import './TattooCanvas.scss';
 
-const imgVersions = [ImgTattooColor, ImgTattooOutline, ImgTattooSkin];
+const imgVersions = [ImgTattooSkin, ImgTattooColor, ImgTattooOutline];
 const imgSmallVersions = [
+	ImgTattooSkinSmall,
 	ImgTattooColorSmall,
 	ImgTattooOutlineSmall,
-	ImgTattooSkinSmall,
 ];
 
 export const TattooCanvas = ({

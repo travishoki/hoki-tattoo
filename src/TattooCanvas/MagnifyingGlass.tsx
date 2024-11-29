@@ -1,11 +1,10 @@
 import React from 'react';
+import { IconTool } from './IconTool';
 import './MagnifyingGlass.scss';
 
 export const MagnifyingGlass = ({ onClick }: MagnifyingGlassProps) => {
 	return (
-		<>
-			<i className="fa fa-search-plus magnifying-glass" onClick={onClick} />
-		</>
+		<IconTool className="fa-search-plus magnifying-glass" onClick={onClick} />
 	);
 };
 

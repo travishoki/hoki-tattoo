@@ -1,17 +1,3 @@
 .magnifying-glass {
-	align-items: center;
-	border-radius: 50%;
-	bottom: 10px;
-	cursor: pointer;
-	display: flex;
-	font-size: 30;
-	height: 30px;
-	justify-content: center;
-	position: absolute;
 	right: 10px;
-	width: 30px;
-
-	&:hover {
-		background: rgba(0, 0, 0, 0.25);
-	}
 }
