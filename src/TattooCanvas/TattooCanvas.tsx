@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ImageModal } from '~components/ImageModal/ImageModal';
-import ImgTattoo from '~images/tattoo.jpg';
-import ImgTattooSmall from '~images/tattoo-small.jpg';
+import ImgTattoo from '~images/tattoo/tattoo.jpg';
+import ImgTattooSmall from '~images/tattoo/tattoo-small.jpg';
 import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH, SPOTS } from '../const';
 import { Spot } from './Spot';
 import { MagnifyingGlass } from './MagnifyingGlass';
