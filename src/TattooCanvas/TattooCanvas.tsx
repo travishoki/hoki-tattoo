@@ -1,25 +1,46 @@
 import React, { useState } from 'react';
 import { ImageModal } from '~components/ImageModal/ImageModal';
-import ImgTattoo from '~images/tattoo/tattoo.jpg';
-import ImgTattooSmall from '~images/tattoo/tattoo-small.jpg';
+import ImgTattooColor from '~images/tattoo/tattoo-color.jpg';
+import ImgTattooColorSmall from '~images/tattoo/tattoo-color-small.jpg';
+import ImgTattooSkin from '~images/tattoo/tattoo-skin.jpg';
+import ImgTattooSkinSmall from '~images/tattoo/tattoo-skin-small.jpg';
+import ImgTattooOutline from '~images/tattoo/tattoo-outline.jpg';
+import ImgTattooOutlineSmall from '~images/tattoo/tattoo-outline-small.jpg';
 import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH, SPOTS } from '../const';
 import { Spot } from './Spot';
 import { MagnifyingGlass } from './MagnifyingGlass';
+import { getCanvasDimensions, getNewVersion } from './TattooCanvas.helpers';
+import { VersionClicker } from './VersionClicker';
 import './TattooCanvas.scss';
-import { getCanvasDimensions } from './TattooCanvas.helpers';
+
+const imgVersions = [ImgTattooColor, ImgTattooOutline, ImgTattooSkin];
+const imgSmallVersions = [
+	ImgTattooColorSmall,
+	ImgTattooOutlineSmall,
+	ImgTattooSkinSmall,
+];
 
 export const TattooCanvas = ({
 	viewerHeight,
 	viewerWidth,
 }: TattooCanvasProps) => {
 	const [selectedImg, setSelectedImg] = useState(false);
+	const [version, setVersion] = useState(1);
 
 	const { height, left, top, width } = getCanvasDimensions(
 		viewerWidth,
 		viewerHeight,
 	);
 
+	const img = imgVersions[version - 1];
+	const imgSmall = imgSmallVersions[version - 1];
+
 	const onClickMaginifyGlass = () => setSelectedImg(!selectedImg);
+
+	const onClickVersion = () => {
+		const newVersion = getNewVersion(version, imgVersions.length);
+		setVersion(newVersion);
+	};
 
 	return (
 		<>
@@ -27,7 +48,7 @@ export const TattooCanvas = ({
 				<ImageModal
 					dimensions={[ORIGINAL_WIDTH, ORIGINAL_HEIGHT]}
 					onClose={onClickMaginifyGlass}
-					src={ImgTattoo}
+					src={img}
 				/>
 			)}
 
@@ -42,8 +63,9 @@ export const TattooCanvas = ({
 					/>
 				))}
 
-				<img alt="Tattoo" height={height} src={ImgTattooSmall} width={width} />
+				<img alt="Tattoo" height={height} src={imgSmall} width={width} />
 
+				<VersionClicker onClick={onClickVersion} />
 				<MagnifyingGlass onClick={onClickMaginifyGlass} />
 			</div>
 		</>

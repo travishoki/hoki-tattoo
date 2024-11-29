@@ -1,4 +1,4 @@
-import { LAPTOP_HEIGHT, ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from 'src/const';
+import { LAPTOP_HEIGHT, ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from '../const';
 import { getHeightFromWidth, getWidthFromHeight } from '~helpers/numbers';
 import { getIsPortrait, getScreenWidth } from '~helpers/screen';
 
@@ -37,4 +37,10 @@ export const getCanvasDimensions = (
 		top,
 		width,
 	};
+};
+
+export const getNewVersion = (version: number, length: number) => {
+	if (version === length) return 1;
+
+	return version + 1;
 };
