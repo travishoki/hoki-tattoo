@@ -7,11 +7,19 @@ export const DragonPhysiologyPage = () => {
 		<Page backLink="/dragon" title="Physiology">
 			<p>
 				Chinese dragons have nine characteristics which are a complex
-				combination. They have a camel&apos;s head, a demon&apos;s eyes, a
-				cow&apos;s ears, a deer&apos;s horns, a clam&apos;s belly, a
-				snake&apos;s neck, an eagle&apos;s claws, a tiger&apos;s paws and 117
-				carp scales.
+				combination.
 			</p>
+			<ul>
+				<li>Camel&apos;s head</li>
+				<li>Demon&apos;s eyes</li>
+				<li>Cow&apos;s ears</li>
+				<li>Deer&apos;s horns</li>
+				<li>Clam&apos;s belly</li>
+				<li>Snake&apos;s neck</li>
+				<li>Eagle&apos;s claws</li>
+				<li>Tiger&apos;s paws</li>
+				<li>117 carp scales</li>
+			</ul>
 			<ExternalLink
 				link="https://www.dragonsinn.net/chinese-dragons/#phy"
 				title="Physiology of Chinese Dragons"
