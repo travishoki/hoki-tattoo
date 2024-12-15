@@ -1,3 +1,4 @@
+// TODO: Skipped because jest couldn't find the alias
 import * as helpers from './TattooCanvas.helpers';
 
 describe('getNewVersion', () => {
