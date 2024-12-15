@@ -31,18 +31,6 @@ export const SPOTS: SpotType[] = [
 		x: 0.63,
 		y: 0.725,
 	},
-	{
-		link: '/sun',
-		title: 'Sun',
-		x: 0.25,
-		y: 0.183,
-	},
-	{
-		link: '/torii',
-		title: 'Torii',
-		x: 0.82,
-		y: 0.059,
-	},
 ];
 
 export type SpotType = {
