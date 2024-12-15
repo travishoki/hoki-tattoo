@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { ImageModal } from '~components/ImageModal/ImageModal';
-import ImgTattooColor from '~images/tattoo/tattoo-color.jpg';
-import ImgTattooColorSmall from '~images/tattoo/tattoo-color-small.jpg';
-import ImgTattooSkin from '~images/tattoo/tattoo-skin.jpg';
-import ImgTattooSkinSmall from '~images/tattoo/tattoo-skin-small.jpg';
-import ImgTattooOutline from '~images/tattoo/tattoo-outline.jpg';
-import ImgTattooOutlineSmall from '~images/tattoo/tattoo-outline-small.jpg';
+
+import ImgTattooSkin from '~images/tattoo/dragon-skin.jpg';
+import ImgTattooSkinSmall from '~images/tattoo/dragon-skin-small.jpg';
+
+import ImgTattooTemplate from '~images/tattoo/dragon-template.jpg';
+import ImgTattooTemplateSmall from '~images/tattoo/dragon-template-small.jpg';
+
 import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH, SPOTS } from '../const';
 import { Spot } from './Spot';
 import { MagnifyingGlass } from './MagnifyingGlass';
@@ -13,12 +14,8 @@ import { getCanvasDimensions, getNewVersion } from './TattooCanvas.helpers';
 import { VersionClicker } from './VersionClicker';
 import './TattooCanvas.scss';
 
-const imgVersions = [ImgTattooSkin, ImgTattooColor, ImgTattooOutline];
-const imgSmallVersions = [
-	ImgTattooSkinSmall,
-	ImgTattooColorSmall,
-	ImgTattooOutlineSmall,
-];
+const imgVersions = [ImgTattooSkin, ImgTattooTemplate];
+const imgSmallVersions = [ImgTattooSkinSmall, ImgTattooTemplateSmall];
 
 export const TattooCanvas = ({
 	viewerHeight,
