@@ -24,8 +24,6 @@ import { JourneyPage } from './pages/JourneyPage';
 import { KanjiPage } from './pages/KanjiPage';
 import { KoiPage } from './pages/KoiPage';
 import { NoMatchPage } from './pages/NoMatchPage';
-import { SunPage } from './pages/SunPage';
-import { ToriiPage } from './pages/ToriiPage';
 import { WhyPage } from './pages/WhyPage';
 import { MobileContext } from './App.context';
 import { LAPTOP_HEIGHT } from './const';
@@ -53,7 +51,6 @@ function App() {
 							<Route element={<HomePage />} index path="/" />
 							<Route element={<KoiPage />} path="/koi" />
 							<Route element={<KanjiPage />} path="/kanji" />
-							<Route element={<SunPage />} path="/sun" />
 							<Route
 								element={<AsianVsEuropeanPage />}
 								path="/dragon/asian-vs-european"
@@ -79,7 +76,7 @@ function App() {
 							/>
 							<Route element={<ArtCreationPage />} path="/art/art-creation" />
 							<Route element={<ArtPage />} path="/art" />
-							<Route element={<ToriiPage />} path="/torii" />
+
 							<Route element={<WhyPage />} path="/why" />
 							<Route element={<NoMatchPage />} path="*" />
 						</Routes>
