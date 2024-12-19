@@ -15,6 +15,12 @@ const spotList = [
 		link: '/koi/journey',
 		title: 'Journey',
 	},
+	{
+		link: '/koi/info',
+		title: 'Info',
+		x: 0.63,
+		y: 0.725,
+	},
 ];
 
 export const HomePage = () => {

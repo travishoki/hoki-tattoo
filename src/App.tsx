@@ -26,6 +26,7 @@ import { WhyPage } from './pages/shared/WhyPage';
 
 // Koi
 import { KoiPage } from './pages/koi';
+import { InfoPage as KoiInfoPage } from './pages/koi/InfoPage';
 import { KanjiPage as KoiKanjiPage } from './pages/koi/KanjiPage';
 import { HomePage as KoiHomePage } from './pages/koi/HomePage';
 
@@ -83,6 +84,7 @@ function App() {
 					<Route element={<KoiPage />} path="/koi">
 						<Route element={<KoiHomePage />} index />
 						<Route element={<WhyPage />} path="/koi/why" />
+						<Route element={<KoiInfoPage />} path="/koi/info" />
 						<Route element={<KoiKanjiPage />} path="/koi/kanji" />
 						<Route element={<JourneyPage />} path="/koi/journey" />
 						<Route

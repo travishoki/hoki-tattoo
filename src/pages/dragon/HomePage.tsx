@@ -16,12 +16,6 @@ const spotList = [
 		title: 'Why',
 	},
 	{
-		link: '/dragon/koi',
-		title: 'Koi',
-		x: 0.63,
-		y: 0.725,
-	},
-	{
 		link: '/dragon/color',
 		title: 'Color',
 		x: 0,

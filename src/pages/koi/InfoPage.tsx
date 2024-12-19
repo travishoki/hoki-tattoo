@@ -2,7 +2,7 @@ import React from 'react';
 import { Page } from '../../components/Page/Page';
 import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 
-export const KoiPage = () => {
+export const InfoPage = () => {
 	return (
 		<Page title="Koi Fish">
 			<p>
