@@ -7,21 +7,25 @@ import { HomePage } from './pages/main/HomePage';
 
 import { NoMatchPage } from './pages/NoMatchPage';
 
-import { DragonPage } from './pages/dragon';
+// Koi
+import { KoiPage } from './pages/koi';
+import { KanjiPage as KoiKanjiPage } from './pages/koi/KanjiPage';
+import { HomePage as KoiHomePage } from './pages/koi/HomePage';
 
-import { ArtJapaneseTraditionalPage } from './pages/dragon/ArtJapaneseTraditionalPage';
+// Dragon
 import { ArtCreationPage } from './pages/dragon/ArtCreationPage';
+import { ArtJapaneseTraditionalPage } from './pages/dragon/ArtJapaneseTraditionalPage';
 import { ArtNeoTraditionalPage } from './pages/dragon/ArtNeoTraditionalPage';
 import { ArtPage } from './pages/dragon/ArtPage';
 import { AsianVsEuropeanPage } from './pages/dragon/AsianVsEuropeanPage';
 import { DragonColorPage } from './pages/dragon/DragonColorPage';
 import { DragonJapaneseVsChinesePage } from './pages/dragon/DragonJapaneseVsChinesePage';
+import { DragonPage } from './pages/dragon';
 import { DragonPhysiologyPage } from './pages/dragon/DragonPhysiology';
 import { HomePage as DragonHomePage } from './pages/dragon/HomePage';
 import { JourneyPage } from './pages/dragon/JourneyPage';
-import { KanjiPage } from './pages/dragon/KanjiPage';
-import { KoiPage } from './pages/dragon/KoiPage';
-import { WhyPage } from './pages/dragon/WhyPage';
+import { KanjiPage as DragonKanjiPage } from './pages/dragon/KanjiPage';
+import { WhyPage } from './pages/shared/WhyPage';
 
 import './App.scss';
 
@@ -33,11 +37,11 @@ function App() {
 			<Router>
 				<Routes>
 					<Route element={<HomePage />} index path="/" />
+
 					<Route element={<DragonPage />} path="/dragon">
 						<Route element={<DragonHomePage />} index />
 						<Route element={<KoiPage />} path="/dragon/koi" />
-						<Route element={<KanjiPage />} path="/dragon/kanji" />
-
+						<Route element={<DragonKanjiPage />} path="/dragon/kanji" />
 						<Route
 							element={<AsianVsEuropeanPage />}
 							path="/dragon/asian-vs-european"
@@ -69,6 +73,12 @@ function App() {
 						<Route element={<WhyPage />} path="/dragon/why" />
 						<Route element={<NoMatchPage />} path="*" />
 					</Route>
+					<Route element={<KoiPage />} path="/koi">
+						<Route element={<KoiHomePage />} index />
+						<Route element={<WhyPage />} path="/koi/why" />
+						<Route element={<KoiKanjiPage />} path="/koi/kanji" />
+					</Route>
+
 					<Route element={<NoMatchPage />} path="*" />
 				</Routes>
 			</Router>

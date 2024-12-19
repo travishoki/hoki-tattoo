@@ -8,6 +8,9 @@ export const HomePage = () => {
 			<Link title="Dragon" to="/dragon">
 				Dragon
 			</Link>
+			<Link title="Koi" to="/koi">
+				Koi
+			</Link>
 		</Page>
 	);
 };
