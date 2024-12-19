@@ -56,7 +56,7 @@ export const TattooCanvas = ({
 
 				<img alt="Tattoo" height={height} src={imgSmall} width={width} />
 
-				<VersionClicker onClick={onClickVersion} />
+				{imgVersions.length > 1 && <VersionClicker onClick={onClickVersion} />}
 				<MagnifyingGlass onClick={onClickMaginifyGlass} />
 			</div>
 		</>
