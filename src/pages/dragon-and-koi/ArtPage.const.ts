@@ -1,4 +1,4 @@
-import { LinkType } from './DragonPage.const';
+import { LinkType } from '../dragon/DragonPage.const';
 
 export const ART_LINKS: LinkType[] = [
 	{

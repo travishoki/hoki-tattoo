@@ -7,16 +7,13 @@ import { HomePage } from './pages/main/HomePage';
 
 import { NoMatchPage } from './pages/NoMatchPage';
 
-// Koi
-import { KoiPage } from './pages/koi';
-import { KanjiPage as KoiKanjiPage } from './pages/koi/KanjiPage';
-import { HomePage as KoiHomePage } from './pages/koi/HomePage';
+// Dragon and Koi
+import { ArtCreationPage } from './pages/dragon-and-koi/ArtCreationPage';
+import { ArtJapaneseTraditionalPage } from './pages/dragon-and-koi/ArtJapaneseTraditionalPage';
+import { ArtNeoTraditionalPage } from './pages/dragon-and-koi/ArtNeoTraditionalPage';
+import { ArtPage } from './pages/dragon-and-koi/ArtPage';
 
 // Dragon
-import { ArtCreationPage } from './pages/dragon/ArtCreationPage';
-import { ArtJapaneseTraditionalPage } from './pages/dragon/ArtJapaneseTraditionalPage';
-import { ArtNeoTraditionalPage } from './pages/dragon/ArtNeoTraditionalPage';
-import { ArtPage } from './pages/dragon/ArtPage';
 import { AsianVsEuropeanPage } from './pages/dragon/AsianVsEuropeanPage';
 import { DragonColorPage } from './pages/dragon/DragonColorPage';
 import { DragonJapaneseVsChinesePage } from './pages/dragon/DragonJapaneseVsChinesePage';
@@ -26,6 +23,11 @@ import { HomePage as DragonHomePage } from './pages/dragon/HomePage';
 import { JourneyPage } from './pages/dragon/JourneyPage';
 import { KanjiPage as DragonKanjiPage } from './pages/dragon/KanjiPage';
 import { WhyPage } from './pages/shared/WhyPage';
+
+// Koi
+import { KoiPage } from './pages/koi';
+import { KanjiPage as KoiKanjiPage } from './pages/koi/KanjiPage';
+import { HomePage as KoiHomePage } from './pages/koi/HomePage';
 
 import './App.scss';
 
@@ -77,6 +79,7 @@ function App() {
 						<Route element={<KoiHomePage />} index />
 						<Route element={<WhyPage />} path="/koi/why" />
 						<Route element={<KoiKanjiPage />} path="/koi/kanji" />
+						<Route element={<ArtPage />} path="/koi/art" />
 					</Route>
 
 					<Route element={<NoMatchPage />} path="*" />
