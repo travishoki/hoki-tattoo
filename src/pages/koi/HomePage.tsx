@@ -19,6 +19,10 @@ const links = [
 		link: '/koi/art',
 		title: 'Art',
 	},
+	{
+		link: '/koi/journey',
+		title: 'Journey',
+	},
 ];
 
 export const HomePage = () => {

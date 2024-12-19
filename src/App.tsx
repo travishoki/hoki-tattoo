@@ -12,6 +12,7 @@ import { ArtCreationPage } from './pages/dragon-and-koi/ArtCreationPage';
 import { ArtJapaneseTraditionalPage } from './pages/dragon-and-koi/ArtJapaneseTraditionalPage';
 import { ArtNeoTraditionalPage } from './pages/dragon-and-koi/ArtNeoTraditionalPage';
 import { ArtPage } from './pages/dragon-and-koi/ArtPage';
+import { JourneyPage } from './pages/dragon-and-koi/JourneyPage';
 
 // Dragon
 import { DragonPage } from './pages/dragon';
@@ -20,7 +21,6 @@ import { DragonColorPage } from './pages/dragon/DragonColorPage';
 import { DragonJapaneseVsChinesePage } from './pages/dragon/DragonJapaneseVsChinesePage';
 import { DragonPhysiologyPage } from './pages/dragon/DragonPhysiology';
 import { HomePage as DragonHomePage } from './pages/dragon/HomePage';
-import { JourneyPage } from './pages/dragon/JourneyPage';
 import { KanjiPage as DragonKanjiPage } from './pages/dragon/KanjiPage';
 import { WhyPage } from './pages/shared/WhyPage';
 
@@ -84,6 +84,7 @@ function App() {
 						<Route element={<KoiHomePage />} index />
 						<Route element={<WhyPage />} path="/koi/why" />
 						<Route element={<KoiKanjiPage />} path="/koi/kanji" />
+						<Route element={<JourneyPage />} path="/koi/journey" />
 						<Route
 							element={<ArtJapaneseTraditionalPage />}
 							path="/koi/art/japanese-traditional"

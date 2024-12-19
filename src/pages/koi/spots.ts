@@ -5,7 +5,7 @@ export const SPOTS: SpotType[] = [
 	{
 		link: '/koi/kanji',
 		title: 'Kanji',
-		x: 0.5,
-		y: 0.47,
+		x: 0.28,
+		y: 0.28,
 	},
 ];
