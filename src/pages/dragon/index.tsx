@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Outlet, Route, Routes } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { MobileArtworkToggle } from '~components/Page/MobileArtworkToggle/MobileArtworkToggle';
 import { getIsLandscape, getIsPortrait, getScreenWidth } from '~helpers/screen';
 import { TattooCanvas } from '../../TattooCanvas/TattooCanvas';
@@ -13,7 +13,7 @@ const isPortrait = getIsPortrait();
 const isLandscape = getIsLandscape();
 const screenWidth = getScreenWidth();
 
-export const ArtWorkPage = () => {
+export const DragonPage = () => {
 	const [viewerHeight, setViewerHeight] = useState(getIntialViewerHeight());
 	const viewerWidth = isLandscape ? LAPTOP_HEIGHT : screenWidth;
 

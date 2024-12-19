@@ -7,7 +7,7 @@ import { HomePage } from './pages/main/HomePage';
 
 import { NoMatchPage } from './pages/NoMatchPage';
 
-import { ArtWorkPage } from './pages/dragon/ArtWorkPage';
+import { DragonPage } from './pages/dragon';
 
 import { ArtJapaneseTraditionalPage } from './pages/dragon/ArtJapaneseTraditionalPage';
 import { ArtCreationPage } from './pages/dragon/ArtCreationPage';
@@ -33,7 +33,7 @@ function App() {
 			<Router>
 				<Routes>
 					<Route element={<HomePage />} index path="/" />
-					<Route element={<ArtWorkPage />} path="/dragon">
+					<Route element={<DragonPage />} path="/dragon">
 						<Route element={<DragonHomePage />} index />
 						<Route element={<KoiPage />} path="/dragon/koi" />
 						<Route element={<KanjiPage />} path="/dragon/kanji" />
