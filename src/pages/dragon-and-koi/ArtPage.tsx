@@ -3,10 +3,14 @@ import { SubPageLinks } from '~components/SubPageLinks/SubPageLinks';
 import { Page } from '../../components/Page/Page';
 import { ART_LINKS } from './ArtPage.const';
 
-export const ArtPage = () => {
+export const ArtPage = ({ root }: ArtPageProps) => {
 	return (
 		<Page title="Art">
-			<SubPageLinks links={ART_LINKS} />
+			<SubPageLinks links={ART_LINKS} root={root} />
 		</Page>
 	);
+};
+
+type ArtPageProps = {
+	root: string;
 };

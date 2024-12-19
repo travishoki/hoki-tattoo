@@ -70,7 +70,7 @@ function App() {
 							element={<ArtCreationPage />}
 							path="/dragon/art/art-creation"
 						/>
-						<Route element={<ArtPage />} path="/dragon/art" />
+						<Route element={<ArtPage root="/dragon" />} path="/dragon/art" />
 
 						<Route element={<WhyPage />} path="/dragon/why" />
 						<Route element={<NoMatchPage />} path="*" />
@@ -79,7 +79,17 @@ function App() {
 						<Route element={<KoiHomePage />} index />
 						<Route element={<WhyPage />} path="/koi/why" />
 						<Route element={<KoiKanjiPage />} path="/koi/kanji" />
-						<Route element={<ArtPage />} path="/koi/art" />
+						<Route
+							element={<ArtJapaneseTraditionalPage />}
+							path="/koi/art/japanese-traditional"
+						/>
+						<Route
+							element={<ArtNeoTraditionalPage />}
+							path="/koi/art/neo-traditional"
+						/>
+						<Route element={<ArtCreationPage />} path="/koi/art/art-creation" />
+
+						<Route element={<ArtPage root="/koi" />} path="/koi/art" />
 					</Route>
 
 					<Route element={<NoMatchPage />} path="*" />
