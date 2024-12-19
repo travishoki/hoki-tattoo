@@ -1,6 +1,6 @@
 import React, { ReactNode, useContext } from 'react';
 import { getIsLandscape, getScreenHeight } from '~helpers/screen';
-import { LAPTOP_HEIGHT, LAPTOP_WIDTH, MOBILE_SIZER_HEIGHT } from 'src/const';
+import { LAPTOP_HEIGHT, LAPTOP_WIDTH, MOBILE_SIZER_HEIGHT } from 'src/types';
 import { MobileContext } from 'src/App.context';
 import './InfoBox.scss';
 

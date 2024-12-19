@@ -7,7 +7,7 @@ import ImgTattooSkinSmall from '~images/tattoo/dragon-skin-small.jpg';
 import ImgTattooTemplate from '~images/tattoo/dragon-template.jpg';
 import ImgTattooTemplateSmall from '~images/tattoo/dragon-template-small.jpg';
 
-import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from '../const';
+import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from '../types';
 import { SPOTS } from 'src/pages/dragon/spots';
 import { Spot } from './Spot';
 import { MagnifyingGlass } from './MagnifyingGlass';

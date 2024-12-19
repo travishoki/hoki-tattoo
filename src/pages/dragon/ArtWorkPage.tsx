@@ -6,7 +6,7 @@ import { TattooCanvas } from '../../TattooCanvas/TattooCanvas';
 import { InfoBox } from '../../InfoBox/InfoBox';
 
 import { MobileContext } from '../../App.context';
-import { LAPTOP_HEIGHT } from '../../const';
+import { LAPTOP_HEIGHT } from '../../types';
 import { getIntialViewerHeight } from '../../App.helpers';
 
 const isPortrait = getIsPortrait();

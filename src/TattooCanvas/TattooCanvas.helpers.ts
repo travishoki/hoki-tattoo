@@ -1,4 +1,4 @@
-import { LAPTOP_HEIGHT, ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from '../const';
+import { LAPTOP_HEIGHT, ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from '../types';
 import { getHeightFromWidth, getWidthFromHeight } from '~helpers/numbers';
 import { getIsPortrait, getScreenWidth } from '~helpers/screen';
 

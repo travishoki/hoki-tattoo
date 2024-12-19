@@ -1,5 +1,5 @@
 import React, { ReactNode, useContext } from 'react';
-import { HEADER_HEIGHT, LAPTOP_HEIGHT, MOBILE_SIZER_HEIGHT } from 'src/const';
+import { HEADER_HEIGHT, LAPTOP_HEIGHT, MOBILE_SIZER_HEIGHT } from 'src/types';
 import { MobileContext } from 'src/App.context';
 import { Header } from './Header/Header';
 import { getScreenHeight, getIsLandscape } from '~helpers/screen';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HEADER_HEIGHT } from 'src/const';
+import { HEADER_HEIGHT } from 'src/types';
 import { Breadcrumbs } from '../Breadcrumbs/Breadcrumbs';
 import { Title } from '../../Title/Title';
 import './Header.scss';

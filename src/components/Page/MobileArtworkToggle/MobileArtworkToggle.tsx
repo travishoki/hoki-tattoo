@@ -5,7 +5,7 @@ import {
 	getIsLandscape,
 	getHalfScreenHeight,
 } from '~helpers/screen';
-import { MIN_VIEWER_HEIGHT, MOBILE_SIZER_HEIGHT } from 'src/const';
+import { MIN_VIEWER_HEIGHT, MOBILE_SIZER_HEIGHT } from 'src/types';
 import { Arrow } from './Arrow';
 import { Dragger } from './Dragger';
 import { MobileContext } from 'src/App.context';
