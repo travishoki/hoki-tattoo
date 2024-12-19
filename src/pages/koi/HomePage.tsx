@@ -1,6 +1,5 @@
 import React from 'react';
-import { Page } from '../../components/Page/Page';
-import { SubPageLinks } from '~components/SubPageLinks/SubPageLinks';
+import { PickASpotPage } from '~components/PickASpotPage/PickASpotPage';
 import { SPOTS } from './spots';
 
 const numberedSpots = SPOTS.map((spot, index) => ({
@@ -26,11 +25,5 @@ const spotList = [
 const links = [...numberedSpots, ...spotList];
 
 export const HomePage = () => {
-	return (
-		<Page title="Pick A Spot">
-			<p>Click a circle to learn more</p>
-
-			<SubPageLinks links={links} />
-		</Page>
-	);
+	return <PickASpotPage links={links} />;
 };

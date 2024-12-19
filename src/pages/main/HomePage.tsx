@@ -1,6 +1,5 @@
 import React from 'react';
-import { SubPageLinks } from '~components/SubPageLinks/SubPageLinks';
-import { Page } from '../../components/Page/Page';
+import { PickASpotPage } from '~components/PickASpotPage/PickASpotPage';
 import { LinkType } from '../dragon/DragonPage.const';
 import { SPOTS } from './spots';
 
@@ -14,11 +13,5 @@ const spotList: LinkType[] = [];
 const links = [...numberedSpots, ...spotList];
 
 export const HomePage = () => {
-	return (
-		<Page title="Pick A Spot">
-			<p>Click a circle to learn more</p>
-
-			<SubPageLinks links={links} />
-		</Page>
-	);
+	return <PickASpotPage links={links} />;
 };
