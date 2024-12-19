@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { getOrientation } from '~helpers/screen';
 
-import { HomePage } from './main/HomePage';
+import { HomePage } from './pages/main/HomePage';
 
 import { NoMatchPage } from './pages/NoMatchPage';
 
