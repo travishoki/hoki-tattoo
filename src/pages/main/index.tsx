@@ -13,6 +13,8 @@ import { MobileContext } from '../../App.context';
 import { LAPTOP_HEIGHT } from '../../types';
 import { getIntialViewerHeight } from '../../App.helpers';
 
+import { SPOTS } from './spots';
+
 const isPortrait = getIsPortrait();
 const isLandscape = getIsLandscape();
 const screenWidth = getScreenWidth();
@@ -29,6 +31,7 @@ export const MainPage = () => {
 			<TattooCanvas
 				imgSmallVersions={imgSmallVersions}
 				imgVersions={imgVersions}
+				spots={SPOTS}
 				viewerHeight={viewerHeight}
 				viewerWidth={viewerWidth}
 			/>

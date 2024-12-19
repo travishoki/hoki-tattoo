@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { ImageModal } from '~components/ImageModal/ImageModal';
 
-import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH } from '../types';
-import { SPOTS } from 'src/pages/dragon/spots';
+import { ORIGINAL_HEIGHT, ORIGINAL_WIDTH, SpotType } from '../types';
 import { Spot } from './Spot';
 import { MagnifyingGlass } from './MagnifyingGlass';
 import { getCanvasDimensions, getNewVersion } from './TattooCanvas.helpers';
@@ -12,6 +11,7 @@ import './TattooCanvas.scss';
 export const TattooCanvas = ({
 	imgSmallVersions,
 	imgVersions,
+	spots,
 	viewerHeight,
 	viewerWidth,
 }: TattooCanvasProps) => {
@@ -44,7 +44,7 @@ export const TattooCanvas = ({
 			)}
 
 			<div className="tattoo-canvas" style={{ height, left, top, width }}>
-				{SPOTS.map((spot, index) => (
+				{spots.map((spot, index) => (
 					<Spot
 						key={index}
 						{...spot}
@@ -66,6 +66,7 @@ export const TattooCanvas = ({
 type TattooCanvasProps = {
 	imgSmallVersions: string[];
 	imgVersions: string[];
+	spots: SpotType[];
 	viewerHeight: number;
 	viewerWidth: number;
 };
