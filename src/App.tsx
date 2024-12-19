@@ -16,7 +16,6 @@ import { ArtPage } from './pages/dragon/ArtPage';
 import { AsianVsEuropeanPage } from './pages/dragon/AsianVsEuropeanPage';
 import { DragonColorPage } from './pages/dragon/DragonColorPage';
 import { DragonJapaneseVsChinesePage } from './pages/dragon/DragonJapaneseVsChinesePage';
-import { DragonPage } from './pages/dragon/DragonPage';
 import { DragonPhysiologyPage } from './pages/dragon/DragonPhysiology';
 import { HomePage as DragonHomePage } from './pages/dragon/HomePage';
 import { JourneyPage } from './pages/dragon/JourneyPage';
@@ -41,18 +40,17 @@ function App() {
 
 						<Route
 							element={<AsianVsEuropeanPage />}
-							path="/dragon/dragon/asian-vs-european"
+							path="/dragon/asian-vs-european"
 						/>
-						<Route element={<DragonColorPage />} path="/dragon/dragon/color" />
+						<Route element={<DragonColorPage />} path="/dragon/color" />
 						<Route
 							element={<DragonJapaneseVsChinesePage />}
-							path="/dragon/dragon/japanese-vs-chinese"
+							path="/dragon/japanese-vs-chinese"
 						/>
 						<Route
 							element={<DragonPhysiologyPage />}
-							path="/dragon/dragon/physiology"
+							path="/dragon/physiology"
 						/>
-						<Route element={<DragonPage />} path="/dragon/dragon" />
 						<Route element={<JourneyPage />} path="/dragon/journey" />
 						<Route
 							element={<ArtJapaneseTraditionalPage />}
