@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page } from '../components/Page/Page';
+import { Page } from '../../components/Page/Page';
 import ImgSisterTattoo from '~images/sister-tattoo.jpg';
 import ImgSisterTattooSmall from '~images/sister-tattoo-small.jpg';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';

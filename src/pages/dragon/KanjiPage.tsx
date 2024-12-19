@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page } from '../components/Page/Page';
+import { Page } from '../../components/Page/Page';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import { ImageMaximizableGroup } from '~components/ImageModal/ImageMaximizableGroup';
 import { SubTitle } from '~components/SubTitle/SubTitle';

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Outlet, Route, Routes } from 'react-router-dom';
 import { MobileArtworkToggle } from '~components/Page/MobileArtworkToggle/MobileArtworkToggle';
 import { getIsLandscape, getIsPortrait, getScreenWidth } from '~helpers/screen';
-import { TattooCanvas } from '../TattooCanvas/TattooCanvas';
-import { InfoBox } from '../InfoBox/InfoBox';
+import { TattooCanvas } from '../../TattooCanvas/TattooCanvas';
+import { InfoBox } from '../../InfoBox/InfoBox';
 
-import { MobileContext } from '../App.context';
-import { LAPTOP_HEIGHT } from '../const';
-import { getIntialViewerHeight } from '../App.helpers';
+import { MobileContext } from '../../App.context';
+import { LAPTOP_HEIGHT } from '../../const';
+import { getIntialViewerHeight } from '../../App.helpers';
 
 const isPortrait = getIsPortrait();
 const isLandscape = getIsLandscape();

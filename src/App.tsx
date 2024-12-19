@@ -5,23 +5,24 @@ import { getOrientation } from '~helpers/screen';
 
 import { HomePage } from './main/HomePage';
 
-import { ArtWorkPage } from './pages/ArtWorkPage';
 import { NoMatchPage } from './pages/NoMatchPage';
 
-import { ArtJapaneseTraditionalPage } from './pages/ArtJapaneseTraditionalPage';
-import { ArtCreationPage } from './pages/ArtCreationPage';
-import { ArtNeoTraditionalPage } from './pages/ArtNeoTraditionalPage';
-import { ArtPage } from './pages/ArtPage';
-import { AsianVsEuropeanPage } from './pages/AsianVsEuropeanPage';
-import { DragonColorPage } from './pages/DragonColorPage';
-import { DragonJapaneseVsChinesePage } from './pages/DragonJapaneseVsChinesePage';
-import { DragonPage } from './pages/DragonPage';
-import { DragonPhysiologyPage } from './pages/DragonPhysiology';
-import { HomePage as DragonHomePage } from './pages/HomePage';
-import { JourneyPage } from './pages/JourneyPage';
-import { KanjiPage } from './pages/KanjiPage';
-import { KoiPage } from './pages/KoiPage';
-import { WhyPage } from './pages/WhyPage';
+import { ArtWorkPage } from './pages/dragon/ArtWorkPage';
+
+import { ArtJapaneseTraditionalPage } from './pages/dragon/ArtJapaneseTraditionalPage';
+import { ArtCreationPage } from './pages/dragon/ArtCreationPage';
+import { ArtNeoTraditionalPage } from './pages/dragon/ArtNeoTraditionalPage';
+import { ArtPage } from './pages/dragon/ArtPage';
+import { AsianVsEuropeanPage } from './pages/dragon/AsianVsEuropeanPage';
+import { DragonColorPage } from './pages/dragon/DragonColorPage';
+import { DragonJapaneseVsChinesePage } from './pages/dragon/DragonJapaneseVsChinesePage';
+import { DragonPage } from './pages/dragon/DragonPage';
+import { DragonPhysiologyPage } from './pages/dragon/DragonPhysiology';
+import { HomePage as DragonHomePage } from './pages/dragon/HomePage';
+import { JourneyPage } from './pages/dragon/JourneyPage';
+import { KanjiPage } from './pages/dragon/KanjiPage';
+import { KoiPage } from './pages/dragon/KoiPage';
+import { WhyPage } from './pages/dragon/WhyPage';
 
 import './App.scss';
 

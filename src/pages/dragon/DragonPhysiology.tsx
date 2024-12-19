@@ -1,6 +1,6 @@
 import React from 'react';
-import { Page } from '../components/Page/Page';
-import { ExternalLink } from '../components/ExternalLink/ExternalLink';
+import { Page } from '../../components/Page/Page';
+import { ExternalLink } from '../../components/ExternalLink/ExternalLink';
 
 export const DragonPhysiologyPage = () => {
 	return (

@@ -8,7 +8,7 @@ import Img3dModel1Small from '~images/3d-model-1-small.jpg';
 import Img3dModel2 from '~images/3d-model-2.jpg';
 import Img3dModel2Small from '~images/3d-model-2-small.jpg';
 
-import { Page } from '../components/Page/Page';
+import { Page } from '../../components/Page/Page';
 import { SubTitle } from '~components/SubTitle/SubTitle';
 import './ArtCreationPage.scss';
 
