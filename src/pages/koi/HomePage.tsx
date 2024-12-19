@@ -8,9 +8,7 @@ const numberedSpots = SPOTS.map((spot, index) => ({
 	title: `${index + 1}) ${spot.title}`,
 }));
 
-const links = [
-	...numberedSpots,
-
+const spotList = [
 	{
 		link: '/koi/why',
 		title: 'Why',
@@ -24,6 +22,8 @@ const links = [
 		title: 'Journey',
 	},
 ];
+
+const links = [...numberedSpots, ...spotList];
 
 export const HomePage = () => {
 	return (

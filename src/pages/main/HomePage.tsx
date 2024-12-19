@@ -1,6 +1,7 @@
 import React from 'react';
-import { Page } from '../../components/Page/Page';
 import { SubPageLinks } from '~components/SubPageLinks/SubPageLinks';
+import { Page } from '../../components/Page/Page';
+import { LinkType } from '../dragon/DragonPage.const';
 import { SPOTS } from './spots';
 
 const numberedSpots = SPOTS.map((spot, index) => ({
@@ -8,7 +9,9 @@ const numberedSpots = SPOTS.map((spot, index) => ({
 	title: `${index + 1}) ${spot.title}`,
 }));
 
-const links = [...numberedSpots];
+const spotList: LinkType[] = [];
+
+const links = [...numberedSpots, ...spotList];
 
 export const HomePage = () => {
 	return (
