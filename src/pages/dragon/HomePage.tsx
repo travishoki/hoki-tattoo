@@ -1,7 +1,7 @@
 import React from 'react';
 import { Page } from '../../components/Page/Page';
 import { SubPageLinks } from '~components/SubPageLinks/SubPageLinks';
-import { SPOTS } from 'src/const';
+import { SPOTS } from './spots';
 
 const numberedSpots = SPOTS.map((spot, index) => ({
 	link: spot.link,
