@@ -3,10 +3,8 @@ import { Outlet } from 'react-router-dom';
 import { MobileArtworkToggle } from '~components/Page/MobileArtworkToggle/MobileArtworkToggle';
 import { getIsLandscape, getIsPortrait, getScreenWidth } from '~helpers/screen';
 
-import ImgTattooSkin from '~images/tattoo/koi-skin.jpg';
-import ImgTattooSkinSmall from '~images/tattoo/koi-skin-small.jpg';
-import ImgTattooTemplate from '~images/tattoo/koi-template.jpg';
-import ImgTattooTemplateSmall from '~images/tattoo/koi-template-small.jpg';
+import ImgTattooFigure from '~images/tattoo/figure.jpg';
+import ImgTattooFigureSmall from '~images/tattoo/figure-small.jpg';
 
 import { TattooCanvas } from '../../TattooCanvas/TattooCanvas';
 import { InfoBox } from '../../InfoBox/InfoBox';
@@ -19,8 +17,8 @@ const isPortrait = getIsPortrait();
 const isLandscape = getIsLandscape();
 const screenWidth = getScreenWidth();
 
-const imgVersions = [ImgTattooSkin, ImgTattooTemplate];
-const imgSmallVersions = [ImgTattooSkinSmall, ImgTattooTemplateSmall];
+const imgVersions = [ImgTattooFigure];
+const imgSmallVersions = [ImgTattooFigureSmall];
 
 export const MainPage = () => {
 	const [viewerHeight, setViewerHeight] = useState(getIntialViewerHeight());
