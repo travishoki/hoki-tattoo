@@ -5,7 +5,7 @@ import './DragonColorPage.scss';
 
 export const DragonColorPage = () => {
 	return (
-		<Page backLink="/dragon" title="Dragon Color">
+		<Page backLink="/dragon/dragon" title="Dragon Color">
 			<p>Eastern and Chinese Dragons: Colors and Meaning</p>
 
 			<ul>

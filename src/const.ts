@@ -14,19 +14,19 @@ export const MIN_VIEWER_HEIGHT = 300;
 // Tattoo Spots
 export const SPOTS: SpotType[] = [
 	{
-		link: '/kanji',
+		link: '/dragon/kanji',
 		title: 'Kanji',
 		x: 0.12,
 		y: 0.3,
 	},
 	{
-		link: '/dragon',
+		link: '/dragon/dragon',
 		title: 'Dragon',
 		x: 0.37,
 		y: 0.1,
 	},
 	{
-		link: '/koi',
+		link: '/dragon/koi',
 		title: 'Koi',
 		x: 0.63,
 		y: 0.725,

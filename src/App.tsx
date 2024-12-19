@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { MobileArtworkToggle } from '~components/Page/MobileArtworkToggle/MobileArtworkToggle';
-import {
-	getIsLandscape,
-	getIsPortrait,
-	getOrientation,
-	getScreenWidth,
-} from '~helpers/screen';
-import { TattooCanvas } from './TattooCanvas/TattooCanvas';
-import { InfoBox } from './InfoBox/InfoBox';
+import { getOrientation } from '~helpers/screen';
+
+import { HomePage } from './main/HomePage';
+
+import { ArtWorkPage } from './pages/ArtWorkPage';
+import { NoMatchPage } from './pages/NoMatchPage';
+
 import { ArtJapaneseTraditionalPage } from './pages/ArtJapaneseTraditionalPage';
 import { ArtCreationPage } from './pages/ArtCreationPage';
 import { ArtNeoTraditionalPage } from './pages/ArtNeoTraditionalPage';
@@ -19,70 +17,62 @@ import { DragonColorPage } from './pages/DragonColorPage';
 import { DragonJapaneseVsChinesePage } from './pages/DragonJapaneseVsChinesePage';
 import { DragonPage } from './pages/DragonPage';
 import { DragonPhysiologyPage } from './pages/DragonPhysiology';
-import { HomePage } from './pages/HomePage';
+import { HomePage as DragonHomePage } from './pages/HomePage';
 import { JourneyPage } from './pages/JourneyPage';
 import { KanjiPage } from './pages/KanjiPage';
 import { KoiPage } from './pages/KoiPage';
-import { NoMatchPage } from './pages/NoMatchPage';
 import { WhyPage } from './pages/WhyPage';
-import { MobileContext } from './App.context';
-import { LAPTOP_HEIGHT } from './const';
+
 import './App.scss';
-import { getIntialViewerHeight } from './App.helpers';
 
 const orientation = getOrientation();
-const isPortrait = getIsPortrait();
-const isLandscape = getIsLandscape();
-const screenWidth = getScreenWidth();
 
 function App() {
-	const [viewerHeight, setViewerHeight] = useState(getIntialViewerHeight());
-	const viewerWidth = isLandscape ? LAPTOP_HEIGHT : screenWidth;
-
 	return (
 		<div className={classNames('app', orientation)}>
-			<MobileContext.Provider value={{ setViewerHeight, viewerHeight }}>
-				<Router>
-					<TattooCanvas viewerHeight={viewerHeight} viewerWidth={viewerWidth} />
-					{isPortrait && <MobileArtworkToggle />}
+			<Router>
+				<Routes>
+					<Route element={<HomePage />} index path="/" />
+					<Route element={<ArtWorkPage />} path="/dragon">
+						<Route element={<DragonHomePage />} index />
+						<Route element={<KoiPage />} path="/dragon/koi" />
+						<Route element={<KanjiPage />} path="/dragon/kanji" />
 
-					<InfoBox>
-						<Routes>
-							<Route element={<HomePage />} index path="/" />
-							<Route element={<KoiPage />} path="/koi" />
-							<Route element={<KanjiPage />} path="/kanji" />
-							<Route
-								element={<AsianVsEuropeanPage />}
-								path="/dragon/asian-vs-european"
-							/>
-							<Route element={<DragonColorPage />} path="/dragon/color" />
-							<Route
-								element={<DragonJapaneseVsChinesePage />}
-								path="/dragon/japanese-vs-chinese"
-							/>
-							<Route
-								element={<DragonPhysiologyPage />}
-								path="/dragon/physiology"
-							/>
-							<Route element={<DragonPage />} path="/dragon" />
-							<Route element={<JourneyPage />} path="/journey" />
-							<Route
-								element={<ArtJapaneseTraditionalPage />}
-								path="/art/japanese-traditional"
-							/>
-							<Route
-								element={<ArtNeoTraditionalPage />}
-								path="/art/neo-traditional"
-							/>
-							<Route element={<ArtCreationPage />} path="/art/art-creation" />
-							<Route element={<ArtPage />} path="/art" />
+						<Route
+							element={<AsianVsEuropeanPage />}
+							path="/dragon/dragon/asian-vs-european"
+						/>
+						<Route element={<DragonColorPage />} path="/dragon/dragon/color" />
+						<Route
+							element={<DragonJapaneseVsChinesePage />}
+							path="/dragon/dragon/japanese-vs-chinese"
+						/>
+						<Route
+							element={<DragonPhysiologyPage />}
+							path="/dragon/dragon/physiology"
+						/>
+						<Route element={<DragonPage />} path="/dragon/dragon" />
+						<Route element={<JourneyPage />} path="/dragon/journey" />
+						<Route
+							element={<ArtJapaneseTraditionalPage />}
+							path="/dragon/art/japanese-traditional"
+						/>
+						<Route
+							element={<ArtNeoTraditionalPage />}
+							path="/dragon/art/neo-traditional"
+						/>
+						<Route
+							element={<ArtCreationPage />}
+							path="/dragon/art/art-creation"
+						/>
+						<Route element={<ArtPage />} path="/dragon/art" />
 
-							<Route element={<WhyPage />} path="/why" />
-							<Route element={<NoMatchPage />} path="*" />
-						</Routes>
-					</InfoBox>
-				</Router>
-			</MobileContext.Provider>
+						<Route element={<WhyPage />} path="/dragon/why" />
+						<Route element={<NoMatchPage />} path="*" />
+					</Route>
+					<Route element={<NoMatchPage />} path="*" />
+				</Routes>
+			</Router>
 		</div>
 	);
 }

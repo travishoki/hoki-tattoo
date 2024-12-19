@@ -4,7 +4,7 @@ import { ExternalLink } from '../components/ExternalLink/ExternalLink';
 
 export const AsianVsEuropeanPage = () => {
 	return (
-		<Page backLink="/dragon" title="Asian vs European">
+		<Page backLink="/dragon/dragon" title="Asian vs European">
 			<p>
 				Most Japanese ones are water deities associated with rainfall and bodies
 				of water, and are typically depicted as large, wingless, serpentine

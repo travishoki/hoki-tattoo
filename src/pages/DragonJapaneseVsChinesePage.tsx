@@ -5,7 +5,7 @@ import { ImgCaption } from '~components/ImgCaption/ImgCaption';
 
 export const DragonJapaneseVsChinesePage = () => {
 	return (
-		<Page backLink="/dragon" title="Japanese vs Chinese">
+		<Page backLink="/dragon/dragon" title="Japanese vs Chinese">
 			<p>
 				The style and appearance of the dragon was heavily influenced by the
 				Chinese dragon, especially the three-clawed long (龍) dragons which were

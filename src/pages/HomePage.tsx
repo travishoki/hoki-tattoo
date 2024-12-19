@@ -11,15 +11,15 @@ const numberedSpots = SPOTS.map((spot, index) => ({
 const links = [
 	...numberedSpots,
 	{
-		link: '/art',
+		link: '/dragon/art',
 		title: 'Art',
 	},
 	{
-		link: '/journey',
+		link: '/dragon/journey',
 		title: 'Journey',
 	},
 	{
-		link: '/why',
+		link: '/dragon/why',
 		title: 'Why',
 	},
 ];

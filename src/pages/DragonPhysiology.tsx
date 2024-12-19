@@ -4,7 +4,7 @@ import { ExternalLink } from '../components/ExternalLink/ExternalLink';
 
 export const DragonPhysiologyPage = () => {
 	return (
-		<Page backLink="/dragon" title="Physiology">
+		<Page backLink="/dragon/dragon" title="Physiology">
 			<p>
 				Chinese dragons have nine characteristics which are a complex
 				combination.
