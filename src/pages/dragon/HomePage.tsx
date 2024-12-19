@@ -47,7 +47,7 @@ const links = [
 		y: 0,
 	},
 	{
-		link: '/dragon//dragon/asian-vs-european',
+		link: '/dragon/asian-vs-european',
 		title: 'Asian vs European',
 		x: 0,
 		y: 0,
