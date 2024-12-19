@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { getOrientation } from '~helpers/screen';
 
+// Main Page
+import { MainPage } from './pages/main';
 import { HomePage } from './pages/main/HomePage';
-
-import { NoMatchPage } from './pages/NoMatchPage';
 
 // Dragon and Koi
 import { ArtCreationPage } from './pages/dragon-and-koi/ArtCreationPage';
@@ -14,10 +14,10 @@ import { ArtNeoTraditionalPage } from './pages/dragon-and-koi/ArtNeoTraditionalP
 import { ArtPage } from './pages/dragon-and-koi/ArtPage';
 
 // Dragon
+import { DragonPage } from './pages/dragon';
 import { AsianVsEuropeanPage } from './pages/dragon/AsianVsEuropeanPage';
 import { DragonColorPage } from './pages/dragon/DragonColorPage';
 import { DragonJapaneseVsChinesePage } from './pages/dragon/DragonJapaneseVsChinesePage';
-import { DragonPage } from './pages/dragon';
 import { DragonPhysiologyPage } from './pages/dragon/DragonPhysiology';
 import { HomePage as DragonHomePage } from './pages/dragon/HomePage';
 import { JourneyPage } from './pages/dragon/JourneyPage';
@@ -29,6 +29,9 @@ import { KoiPage } from './pages/koi';
 import { KanjiPage as KoiKanjiPage } from './pages/koi/KanjiPage';
 import { HomePage as KoiHomePage } from './pages/koi/HomePage';
 
+// No Match
+import { NoMatchPage } from './pages/NoMatchPage';
+
 import './App.scss';
 
 const orientation = getOrientation();
@@ -38,7 +41,9 @@ function App() {
 		<div className={classNames('app', orientation)}>
 			<Router>
 				<Routes>
-					<Route element={<HomePage />} index path="/" />
+					<Route element={<MainPage />} path="/">
+						<Route element={<HomePage />} index />
+					</Route>
 
 					<Route element={<DragonPage />} path="/dragon">
 						<Route element={<DragonHomePage />} index />
