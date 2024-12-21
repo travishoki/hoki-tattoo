@@ -12,13 +12,13 @@ import ImgKanjiMeaning from '~images/kanji-meaning.jpg';
 import ImgKanjiSmall from '~images/hoki-kanji-small.jpg';
 import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 
-export const KanjiPage = () => {
+export const DragonKanjiPage = () => {
 	return (
 		<Page title="Kanji">
 			<p>
 				&quot;Hoki&quot; is my family surname. These are the Japanese Kanji
-				characters for Hoki. My Bachan has approved this as the Kanji my family
-				uses.
+				characters for Hoki. My Bachan (Grandma) has approved this as the Kanji
+				my family uses.
 			</p>
 			<ImageMaximizable
 				alt="Kanji"

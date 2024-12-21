@@ -26,13 +26,13 @@ import { DragonColorPage } from './pages/dragon/DragonColorPage';
 import { DragonJapaneseVsChinesePage } from './pages/dragon/DragonJapaneseVsChinesePage';
 import { DragonPhysiologyPage } from './pages/dragon/DragonPhysiology';
 import { HomePage as DragonHomePage } from './pages/dragon/HomePage';
-import { KanjiPage as DragonKanjiPage } from './pages/dragon/KanjiPage';
+import { DragonKanjiPage } from './pages/dragon/DragonKanjiPage';
 import { WhyPage } from './pages/shared/WhyPage';
 
 // Koi
 import { KoiPage } from './pages/koi';
 import { InfoPage as KoiInfoPage } from './pages/koi/InfoPage';
-import { KanjiPage as KoiKanjiPage } from './pages/koi/KanjiPage';
+import { KoiKanjiPage } from './pages/koi/KoiKanjiPage';
 import { HomePage as KoiHomePage } from './pages/koi/HomePage';
 
 // No Match
