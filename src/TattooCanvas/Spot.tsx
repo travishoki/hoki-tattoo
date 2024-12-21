@@ -11,14 +11,31 @@ export const Spot = ({ height, link, num, title, width, x, y }: SpotProps) => {
 	const top = y * height;
 	const to = isActive ? '/' : link;
 
+	const spotSize = width * 0.075;
+
+	const spotStyles = {
+		height: spotSize,
+		left,
+		marginLeft: -(spotSize / 2),
+		marginTop: -(spotSize / 2),
+		top,
+		width: spotSize,
+	};
+
+	const markerStyles = {
+		fontSize: spotSize * 0.25,
+	};
+
 	return (
 		<Link
 			className={classnames('spot', { active: isActive })}
-			style={{ left, top }}
+			style={spotStyles}
 			title={title}
 			to={to}
 		>
-			<div className="marker">{num}</div>
+			<div className="marker" style={markerStyles}>
+				{num}
+			</div>
 		</Link>
 	);
 };

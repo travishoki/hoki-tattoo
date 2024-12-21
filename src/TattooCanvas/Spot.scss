@@ -1,29 +1,26 @@
-$radius: 30px;
 .spot {
 	align-items: center;
 	border-radius: 50%;
+	box-sizing: border-box;
 	cursor: pointer;
 	display: flex;
-	height: $radius;
 	justify-content: center;
-	margin-left: -$radius / 2;
-	margin-top: -$radius / 2;
 	position: absolute;
 	text-decoration: none;
-	width: $radius;
 
 	&:hover {
 		background: rgba(0, 0, 255, 0.25);
 	}
 
 	.marker {
-		border: solid 2px black;
 		background: blue;
 		border-radius: 50%;
-		font-size: 8px;
+		border: solid 2px black;
+		box-sizing: border-box;
+		font-weight: bold;
+		height: 50%;
 		text-align: center;
-		height: 10px;
-		width: 10px;
+		width: 50%;
 	}
 }
 
