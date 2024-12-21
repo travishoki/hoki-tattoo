@@ -1,15 +1,20 @@
 import React from 'react';
-import { PickASpotPage } from '~components/PickASpotPage/PickASpotPage';
-import { LinkType } from '../dragon/DragonPage.const';
-import { SPOTS } from './spots';
-
-const spotList: LinkType[] = [
-	{
-		link: '/melody/meaning',
-		title: 'Meaning',
-	},
-];
+import { Page } from '../../components/Page/Page';
+import ImgMelody from '~images/melody-at-wedding.jpg';
+import ImgMelodySmall from '~images/melody-at-wedding-small.jpg';
+import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 
 export const HomePage = () => {
-	return <PickASpotPage spotList={spotList} spots={SPOTS} />;
+	return (
+		<Page title="Meaning">
+			<p>Meaning</p>
+			<ImageMaximizable
+				alt="Melody"
+				dimensions={[300, 449]}
+				src={ImgMelodySmall}
+				srcLarge={ImgMelody}
+				srcLargeDimensions={[1367, 2048]}
+			/>
+		</Page>
+	);
 };

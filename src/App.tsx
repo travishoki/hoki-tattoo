@@ -10,7 +10,6 @@ import { HomePage } from './pages/main/HomePage';
 // Main Page
 import { MelodyPage } from './pages/melody';
 import { HomePage as MelodyHomePage } from './pages/melody/HomePage';
-import { MeaningPage } from './pages/melody/MeaningPage';
 
 // Dragon and Koi
 import { ArtCreationPage } from './pages/dragon-and-koi/ArtCreationPage';
@@ -107,7 +106,6 @@ function App() {
 
 					<Route element={<MelodyPage />} path="/melody">
 						<Route element={<MelodyHomePage />} index />
-						<Route element={<MeaningPage />} path="/melody/meaning" />
 					</Route>
 
 					<Route element={<NoMatchPage />} path="*" />
