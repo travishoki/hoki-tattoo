@@ -14,4 +14,10 @@ export const SPOTS: SpotType[] = [
 		x: 0.65,
 		y: 0.37,
 	},
+	{
+		link: '/melody',
+		title: 'Melody',
+		x: 0.35,
+		y: 0.7,
+	},
 ];

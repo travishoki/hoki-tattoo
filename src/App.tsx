@@ -7,6 +7,11 @@ import { getOrientation } from '~helpers/screen';
 import { MainPage } from './pages/main';
 import { HomePage } from './pages/main/HomePage';
 
+// Main Page
+import { MelodyPage } from './pages/melody';
+import { HomePage as MelodyHomePage } from './pages/melody/HomePage';
+import { MeaningPage } from './pages/melody/MeaningPage';
+
 // Dragon and Koi
 import { ArtCreationPage } from './pages/dragon-and-koi/ArtCreationPage';
 import { ArtJapaneseTraditionalPage } from './pages/dragon-and-koi/ArtJapaneseTraditionalPage';
@@ -98,6 +103,11 @@ function App() {
 						<Route element={<ArtCreationPage />} path="/koi/art/art-creation" />
 
 						<Route element={<ArtPage root="/koi" />} path="/koi/art" />
+					</Route>
+
+					<Route element={<MelodyPage />} path="/melody">
+						<Route element={<MelodyHomePage />} index />
+						<Route element={<MeaningPage />} path="/melody/meaning" />
 					</Route>
 
 					<Route element={<NoMatchPage />} path="*" />
