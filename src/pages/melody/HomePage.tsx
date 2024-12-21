@@ -6,7 +6,7 @@ import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 
 export const HomePage = () => {
 	return (
-		<Page title="Meaning">
+		<Page title="Melody">
 			<ImageMaximizable
 				alt="Melody"
 				dimensions={[300, 449]}

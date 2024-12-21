@@ -16,6 +16,7 @@
 
 .tattoo-canvas {
 	position: relative;
+	z-index: -1;
 
 	img {
 		margin: 0;
