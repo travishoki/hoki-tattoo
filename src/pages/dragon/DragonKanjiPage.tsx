@@ -3,13 +3,13 @@ import { Page } from '../../components/Page/Page';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import { ImageMaximizableGroup } from '~components/ImageModal/ImageMaximizableGroup';
 import { SubTitle } from '~components/SubTitle/SubTitle';
-import ImgCranes from '~images/1001-cranes.jpg';
-import ImgCranesFrame from '~images/1001-cranes-frame.jpg';
-import ImgCranesFrameSmall from '~images/1001-cranes-frame-small.jpg';
-import ImgCranesSmall from '~images/1001-cranes-small.jpg';
-import ImgKanji from '~images/hoki-kanji.jpg';
-import ImgKanjiMeaning from '~images/kanji-meaning.jpg';
-import ImgKanjiSmall from '~images/hoki-kanji-small.jpg';
+import ImgCranes from '~images/hoki/1001-cranes.jpg';
+import ImgCranesFrame from '~images/hoki/1001-cranes-frame.jpg';
+import ImgCranesFrameSmall from '~images/hoki/1001-cranes-frame-small.jpg';
+import ImgCranesSmall from '~images/hoki/1001-cranes-small.jpg';
+import ImgKanji from '~images//hoki/hoki-kanji.jpg';
+import ImgKanjiMeaning from '~images/hoki/kanji-meaning.jpg';
+import ImgKanjiSmall from '~images//hoki/hoki-kanji-small.jpg';
 import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 
 export const DragonKanjiPage = () => {

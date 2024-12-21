@@ -2,9 +2,9 @@ import React from 'react';
 import { Page } from '../../components/Page/Page';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
 import { SubTitle } from '~components/SubTitle/SubTitle';
-import ImgKanji from '~images/hoki-kanji.jpg';
-import ImgKanjiMeaning from '~images/kanji-meaning.jpg';
-import ImgKanjiSmall from '~images/hoki-kanji-small.jpg';
+import ImgKanji from '~images//hoki/hoki-kanji.jpg';
+import ImgKanjiMeaning from '~images/hoki/kanji-meaning.jpg';
+import ImgKanjiSmall from '~images//hoki/hoki-kanji-small.jpg';
 import { ExternalLink } from '~components/ExternalLink/ExternalLink';
 
 export const KoiKanjiPage = () => {
