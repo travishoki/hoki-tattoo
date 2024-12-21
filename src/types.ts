@@ -3,8 +3,8 @@ export const LAPTOP_HEIGHT = 650;
 export const LAPTOP_WIDTH = 600;
 
 // Tattoo Size
-export const ORIGINAL_WIDTH = 2480;
-export const ORIGINAL_HEIGHT = 3508;
+export const ORIGINAL_WIDTH = 1753;
+export const ORIGINAL_HEIGHT = 2480;
 
 // Heights
 export const MOBILE_SIZER_HEIGHT = 60;
