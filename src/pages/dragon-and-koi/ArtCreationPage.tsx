@@ -12,6 +12,8 @@ import ImgRightArmSmall from '~images/3d-model/right-arm-2-small.jpg';
 
 import { Page } from '../../components/Page/Page';
 import { SubTitle } from '~components/SubTitle/SubTitle';
+
+import { ImageMaximizableGroup } from '~components/ImageModal/ImageMaximizableGroup';
 import './ArtCreationPage.scss';
 
 export const ArtCreationPage = () => {
@@ -53,19 +55,23 @@ export const ArtCreationPage = () => {
 				</li>
 			</ul>
 
-			<ImageMaximizable
-				alt="3D Model"
-				dimensions={[300, 300]}
-				src={ImgLeftArmSmall}
-				srcLarge={ImgLeftArm}
-				srcLargeDimensions={[2048, 2048]}
-			/>
-			<ImageMaximizable
-				alt="3D Model"
-				dimensions={[300, 300]}
-				src={ImgRightArmSmall}
-				srcLarge={ImgRightArm}
-				srcLargeDimensions={[2048, 2048]}
+			<ImageMaximizableGroup
+				list={[
+					{
+						alt: '3D Model',
+						dimensions: [300, 300],
+						src: ImgLeftArmSmall,
+						srcLarge: ImgLeftArm,
+						srcLargeDimensions: [2048, 2048],
+					},
+					{
+						alt: '3D Model',
+						dimensions: [300, 300],
+						src: ImgRightArmSmall,
+						srcLarge: ImgRightArm,
+						srcLargeDimensions: [2048, 2048],
+					},
+				]}
 			/>
 		</Page>
 	);
