@@ -1,12 +1,14 @@
 import React from 'react';
 import { ImageMaximizable } from '~components/ImageModal/ImageMaximizable';
-import ImgIpadArt from '~images/ipad-art.jpg';
-import ImgIpadArtSmall from '~images/ipad-art-small.jpg';
 
-import Img3dModel1 from '~images/3d-model-1.jpg';
-import Img3dModel1Small from '~images/3d-model-1-small.jpg';
-import Img3dModel2 from '~images/3d-model-2.jpg';
-import Img3dModel2Small from '~images/3d-model-2-small.jpg';
+import ImgIpadArt from '~images/art/ipad-art.jpg';
+import ImgIpadArtSmall from '~images/art/ipad-art-small.jpg';
+
+import ImgLeftArm from '~images/3d-model/left-arm-2.jpg';
+import ImgLeftArmSmall from '~images/3d-model/left-arm-2-small.jpg';
+
+import ImgRightArm from '~images/3d-model/right-arm-2.jpg';
+import ImgRightArmSmall from '~images/3d-model/right-arm-2-small.jpg';
 
 import { Page } from '../../components/Page/Page';
 import { SubTitle } from '~components/SubTitle/SubTitle';
@@ -54,15 +56,15 @@ export const ArtCreationPage = () => {
 			<ImageMaximizable
 				alt="3D Model"
 				dimensions={[300, 400]}
-				src={Img3dModel1Small}
-				srcLarge={Img3dModel1}
+				src={ImgLeftArmSmall}
+				srcLarge={ImgLeftArm}
 				srcLargeDimensions={[1274, 1698]}
 			/>
 			<ImageMaximizable
 				alt="3D Model"
 				dimensions={[300, 400]}
-				src={Img3dModel2Small}
-				srcLarge={Img3dModel2}
+				src={ImgRightArmSmall}
+				srcLarge={ImgRightArm}
 				srcLargeDimensions={[1408, 1878]}
 			/>
 		</Page>
